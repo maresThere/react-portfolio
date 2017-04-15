@@ -50,10 +50,13 @@ class App extends Component {
           <img src={this.state.profile} />
           <div className='introText'>
           <h1>{this.state.name}</h1>
-          <div>{this.state.bio}</div>
+          <p>{this.state.bio}</p>
           </div>
         </div>
       </div>
+      <section className='aboutMe'>
+        <p>More about me goes here</p>
+      </section>
     </div>
   }
 }

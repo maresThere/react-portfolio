@@ -1,25 +1,25 @@
 @import 'utility';
 @import 'matteFinish';
+@import 'pagebreaks';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
 
 h1,
 h2,
 h3 {
-  margin: 5px;
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 14px;
   color: white;
 }
 
 html {
   font-family: 'Raleway', sans-serif;
   text-size-adjust: 100%;
-  font-size: 50px;
+  font-size: 14px;
 }
 
 .navLinks {
   display: flex;
-  height: 200px;
+  height: 100px;
   width: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -30,10 +30,10 @@ html {
   li {
     display: inline;
     flex: 0 1 auto;
-    width: 200px;
-    border: 3px solid white;
+    width: 100px;
+    border: 1px solid white;
     font-size: 1.5em;
-    margin-right: 75px;
+    margin-right: 50px;
     font-weight: 300;
     text-align: center;
   }
@@ -47,23 +47,42 @@ html {
 .wrapper {
   // position: relative;
 }
+
 .introBox {
-  // background-color: $sheeraqua;
-  border: 5px solid $sheeraqua;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   position: absolute;
-  bottom: 300px;
-  left: 200px;
+  bottom: 100px;
+  left: 50%;
+  transform: (-50%, 0);
   height: 350px;
 
   img {
     border-radius: 50%;
-    margin-left: 100px;
+    margin-left: -100px;
+    border: 3px solid $golden;
+    max-width: 200px;
   }
+  .introText {
+    margin: 0 5px 10px 20px;
+  }
+
   h1 {
-    height: 100px;
+    // height: 100px;
     align-self: center;
+    border-bottom: 5px solid $golden;
+    width: 70%;
+    padding-bottom: 10px;
   }
+  p {
+    margin: 0;
+    width: 80%;
+    color: white;
+  }
+}
+
+.aboutMe {
+  background-color: $golden;
+  height:300px;
 }
