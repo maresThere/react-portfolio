@@ -2,16 +2,14 @@
 
 .bgImage {
   position: absolute;
-  top: 50px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $aqua;
   background-image: url('http://i.imgur.com/PwUvsiW.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 5px solid $golden;
-  border-bottom: 5px solid $golden;
+  background-attachment: fixed;
   z-index: -2;
   filter: brightness(90%) contrast(90%) blur(2px) grayscale(10%);
 }

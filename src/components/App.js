@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Gitcall from './Gitcall'
 import Nav from './Nav'
+import Intro from './Intro'
 
 class App extends Component {
   state = {
@@ -46,13 +47,8 @@ class App extends Component {
       <div className='mainContainer'>
         <Nav navTitle='subject1' />
         <Gitcall repos={this.state.repos} repoName={this.state.repoName} />
-        <div className='introBox'>
-          <img src={this.state.profile} />
-          <div className='introText'>
-          <h1>{this.state.name}</h1>
-          <p>{this.state.bio}</p>
-          </div>
-        </div>
+
+        <Intro profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
       </div>
       <section className='aboutMe'>
         <p>More about me goes here</p>
