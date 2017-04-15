@@ -1,5 +1,12 @@
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+$aqua: #85dbc2;
+$golden: #e8b866;
+$darkgray: #bcbdc0;
+$lightgray: #929598;
+
+$base-text-size: 36px;
+$base-font-family: 'Raleway', sans-serif;
+$base-font-weight: 400;
+$sheeraqua: rgba(#85dbc2, 0.8);
 
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {

@@ -1,13 +1,69 @@
 @import 'utility';
+@import 'matteFinish';
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
-
-html {
-  @include full-height;
+h1,
+h2,
+h3 {
+  margin: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  color: white;
 }
 
-body {
-  margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+html {
+  font-family: 'Raleway', sans-serif;
+  text-size-adjust: 100%;
+  font-size: 50px;
+}
+
+.navLinks {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $aqua;
+  border-bottom: 5px solid $golden;
+  list-style: none;
+
+  li {
+    display: inline;
+    flex: 0 1 auto;
+    width: 200px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    margin-right: 75px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+.wrapper {
+  // position: relative;
+}
+.introBox {
+  // background-color: $sheeraqua;
+  border: 5px solid $sheeraqua;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+  height: 350px;
+
+  img {
+    border-radius: 50%;
+    margin-left: 100px;
+  }
+  h1 {
+    height: 100px;
+    align-self: center;
+  }
 }
