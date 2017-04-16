@@ -123,7 +123,20 @@ html {
   padding: 20px;
   display: flex;
 
-  .work {
+  .workee {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+  a {
     border: 2px solid white;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
   }
 }

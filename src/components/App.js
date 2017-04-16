@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import Gitcall from './Gitcall'
 import Nav from './Nav'
 import Intro from './Intro'
-import theIronYardLogo from '../images/theIronYardLogo.png'
-import glasses from '../images/glasses.png'
-import light from '../images/light.png'
+import About from './About'
 
 class App extends Component {
   state = {
@@ -43,17 +41,13 @@ class App extends Component {
       <div id='color_layer' />
       <div className='bgImage' />
       <div className='mainContainer'>
-        <Nav navTitle='subject1' />
+        <Nav />
         <Intro profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
-      </div>
-      <section className='aboutMe'>
         <a name='about' />
-         <p><img src={glasses} height='40px' width='80px' />My background is in Property Management where I became skilled in sales, marketing and business operations. The characteristics I will bring to my employer are a positive attitude and a willingness to help as well as learn from others.</p><p><img src={theIronYardLogo} height='70px' width='70px' />
-         I am currently a Front End Development student at The Iron Yard in St. Petersburg, Florida. My completion date is June 2, 2017.</p>
-        <p><img src={light} height='70px' width='78px' />I enjoy design and development. Creating an application that is both delightfully functional and aesthetically pleasing is very exciting to me.</p>
-      </section>
+      </div>
+      <About />
       <section className='myWork'>
-        <Gitcall className='work' work={this.state.work} />
+        <Gitcall work={this.state.work} />
       </section>
     </div>
   }
