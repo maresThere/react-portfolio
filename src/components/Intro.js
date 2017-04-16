@@ -7,17 +7,17 @@ class Intro extends Component {
       <div className='introBox'>
         <img src={this.props.profile} />
         <div className='introText'>
-         <h1>{this.props.name}</h1>
-         <p>{this.props.bio}</p>
+          <h1>{this.props.name}</h1>
+          <p>{this.props.bio}</p>
+        </div>
       </div>
-    </div>
     )
   }
 }
 Intro.propTypes = {
   name: React.PropTypes.array,
   bio: React.PropTypes.array,
-  // profile: React.PropTypes.image
+  profile: React.PropTypes.array
 }
 
 export default Intro
