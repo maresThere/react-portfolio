@@ -12,7 +12,7 @@ class App extends Component {
     name: [],
     location: [],
     bio: [],
-    repos: [],
+    work: [],
     repoName: []
   }
 
@@ -32,12 +32,9 @@ class App extends Component {
     window.fetch(assignments)
         .then(r => r.json())
         .then(data => {
-          for (let i = 0; i < data.length; i++) {
-            this.setState({
-              repos: [...this.state.repos, data[i].html_url],
-              repoName: [...this.state.repoName, data[i].description]
-            })
-          }
+          this.setState({
+            work: data
+          })
         })
   }
 
@@ -51,12 +48,12 @@ class App extends Component {
       </div>
       <section className='aboutMe'>
         <a name='about' />
-        <p><img src={theIronYardLogo} height='70px' width='70px' />
-        I am currently a Front End Development student at The Iron Yard in St. Petersburg, Florida. My completion date is June 2, 2017.</p> <p><img src={glasses} height='40px' width='80px' />My background is in Property Management where I became skilled in sales, marketing and business operations. The characteristics I will bring to my employer are a positive attitude and a willingness to help as well as learn from others.</p>
-      <p><img src={light} height='70px' width='78px' />I enjoy design and development. Creating an application that is both delightfully functional and aesthetically pleasing is very exciting to me.</p>
+         <p><img src={glasses} height='40px' width='80px' />My background is in Property Management where I became skilled in sales, marketing and business operations. The characteristics I will bring to my employer are a positive attitude and a willingness to help as well as learn from others.</p><p><img src={theIronYardLogo} height='70px' width='70px' />
+         I am currently a Front End Development student at The Iron Yard in St. Petersburg, Florida. My completion date is June 2, 2017.</p>
+        <p><img src={light} height='70px' width='78px' />I enjoy design and development. Creating an application that is both delightfully functional and aesthetically pleasing is very exciting to me.</p>
       </section>
       <section className='myWork'>
-        <Gitcall repos={this.state.repos} repoName={this.state.repoName} />
+        <Gitcall className='work' work={this.state.work} />
       </section>
     </div>
   }

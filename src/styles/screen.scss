@@ -98,7 +98,7 @@ html {
 
 .aboutMe {
   background-color: $golden;
-  height: 300px;
+  min-height: 300px;
   margin: -10px -10px -10px -10px;
   padding: 20px;
   display: flex;
@@ -122,4 +122,8 @@ html {
   margin: -10px -10px -10px -10px;
   padding: 20px;
   display: flex;
+
+  .work {
+    border: 2px solid white;
+  }
 }

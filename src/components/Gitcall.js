@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 
 class Gitcall extends Component {
-
   render () {
-    return <div>
-      <div><a href={this.props.repos[0]}>{this.props.repoName[0]}</a></div>
-      <div><a href={this.props.repos[1]}>assignments</a></div>
-    </div>
+    const links = this.props.work.map((repo, i) => {
+      return <a className={`pic${i + 1}`} href={repo.html_url} key={i}>
+        <img src={`https://raw.githubusercontent.com/maresThere/${repo.name}/master/screenshot.png`} />{repo.description}
+      </a>
+    })
+    return (
+      <div>
+        {links}
+      </div>  
+    )
   }
 }
 
