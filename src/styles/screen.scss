@@ -1,6 +1,7 @@
-@import 'utility';
+@import '_utility';
 @import 'matteFinish';
 @import 'pagebreaks';
+@import '_resume';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
 
 h1,
@@ -15,11 +16,21 @@ html {
   font-size: 14px;
 }
 
+.quote {
+  color: white;
+  font-size: 2em;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  margin: 10px 20px 30px 30px;
+}
+
 .mainContainer {
   height: 100vh;
   border-bottom: $goldBorder;
   margin: -10px -10px -10px -10px;
 }
+
 
 .navLinks {
   display: flex;
@@ -34,11 +45,11 @@ html {
   list-style: none;
   z-index: 1;
 
-  // ul {
-  //   margin: 0;
-  // }
+  h2 {
+    align-self: flex-start;
+  }
 
-  li {
+  .navBtn {
     display: inline;
     flex: 0 1 auto;
     width: 100px;
@@ -47,6 +58,16 @@ html {
     margin-right: 50px;
     font-weight: 300;
     text-align: center;
+    transition: 0.5s;
+  }
+
+  .navBtn:hover {
+    transform: scale(1.0);
+    background-color: white;
+
+    a {
+      color: $aqua;
+    }
   }
 
   a {
@@ -64,7 +85,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   position: absolute;
-  bottom: 15%;
+  bottom: 50%;
   left: 30%;
   transform: (-50%, 0);
   height: 350px;
@@ -74,7 +95,7 @@ html {
     border-radius: 50%;
     margin-left: -100px;
     border: $goldBorder;
-    max-width: 200px;
+    max-width: 150px;
   }
 
   .introText {
@@ -97,13 +118,16 @@ html {
 }
 
 .aboutMe {
+  // visibility: hidden;
   background-color: $golden;
   min-height: 300px;
   margin: -10px -10px -10px -10px;
   padding: 20px;
   display: flex;
+  position: fixed;
+  bottom: 0;
 
-  p{
+  p {
     margin: 15px;
     font-size: 1.2em;
     flex: 1;
@@ -122,6 +146,8 @@ html {
   margin: -10px -10px -10px -10px;
   padding: 20px;
   display: flex;
+  position: fixed;
+  bottom: 0;
 
   .workee {
     display: flex;

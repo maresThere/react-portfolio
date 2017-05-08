@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router,
+Link,
+Switch,
+Route } from 'react-router-dom'
 import Gitcall from './Gitcall'
 import Nav from './Nav'
 import Intro from './Intro'
 import About from './About'
+import Resume from './Resume'
 
 class App extends Component {
   state = {
@@ -37,19 +42,27 @@ class App extends Component {
   }
 
   render () {
-    return <div className='wrapper'>
-      <div id='color_layer' />
-      <div className='bgImage' />
-      <div className='mainContainer'>
-        <Nav />
-        <Intro profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
-        <a name='about' />
+    return <Router>
+      <div className='wrapper'>
+        <div id='color_layer' />
+        <div className='bgImage' />
+        <div className='mainContainer'>
+          <Nav />
+          {/* <Intro profile={this.state.profile} name={this.state.name} bio={this.state.bio} /> */}
+          <Switch>
+            {/* <Route exact path='/' /> */}
+            <Route exact path='/Intro' render={(props) => {
+              return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
+            }} />
+            <Route path='/about' component={About} />
+            <Route path='/work' render={(props) => {
+              return <Gitcall {...props} work={this.state.work} />
+            }} />
+            <Route path='/resume' component={Resume} />
+          </Switch>
+        </div>
       </div>
-      <About />
-      <section className='myWork'>
-        <Gitcall work={this.state.work} />
-      </section>
-    </div>
+    </Router>
   }
 }
 

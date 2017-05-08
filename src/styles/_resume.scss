@@ -1,0 +1,15 @@
+.Resume {
+  display: grid;
+  max-width: 600px;
+  height: 100vh;
+  align-content: center;
+  grid-template-columns: 100px 300px 200px;
+
+  .heading {
+    grid-column: 2/3;
+  }
+
+  .education {
+    grid-column: 2/3;
+  }
+}
