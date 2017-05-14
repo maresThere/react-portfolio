@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
 
 class Resume extends Component {
   render () {
@@ -36,6 +35,7 @@ class Resume extends Component {
         <ul>
           <li>Updated taxonomy & categorized 5,300 products on VitaminDiscountCenter.com.</li>
           <li>Created marketing email weekly with Constant Contact.</li>
+          <li>Monitered email effectiveness by reviewing sales reports in 3Dcart eCommerce tool.</li>
           <li>Created A+ content (images & text) for Amazon.com</li>
           <li>Optimized images for web and print.
    Layout magazine articles; typesetting & graphics.</li>

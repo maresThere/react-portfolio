@@ -43,14 +43,11 @@ class App extends Component {
 
   render () {
     return <Router>
-      <div className='wrapper'>
+      <div>
         <div id='color_layer' />
         <div className='bgImage' />
         <div className='mainContainer'>
-          <Nav />
-          {/* <Intro profile={this.state.profile} name={this.state.name} bio={this.state.bio} /> */}
           <Switch>
-            {/* <Route exact path='/' /> */}
             <Route exact path='/Intro' render={(props) => {
               return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
             }} />
@@ -60,6 +57,7 @@ class App extends Component {
             }} />
             <Route path='/resume' component={Resume} />
           </Switch>
+          <Nav />
         </div>
       </div>
     </Router>

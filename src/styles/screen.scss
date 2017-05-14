@@ -2,6 +2,8 @@
 @import 'matteFinish';
 @import 'pagebreaks';
 @import 'resume';
+@import 'nav';
+@import 'intro';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
 
 h1,
@@ -26,96 +28,9 @@ html {
 }
 
 .mainContainer {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  border-bottom: $goldBorder;
-  margin: -10px -10px -10px -10px;
-}
-
-.navLinks {
-  display: flex;
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: $sheeraqua;
-  margin: -10px -5px 0 -5px;
-  border-bottom: $goldBorder;
-  list-style: none;
-  z-index: 1;
-
-  h2 {
-    align-self: flex-start;
-  }
-
-  .navBtn {
-    display: inline;
-    flex: 0 1 auto;
-    width: 100px;
-    border: 1px solid white;
-    font-size: 1.5em;
-    margin-right: 50px;
-    font-weight: 300;
-    text-align: center;
-    transition: 0.5s;
-  }
-
-  .navBtn:hover {
-    transform: scale(1);
-    background-color: white;
-
-    a {
-      color: $aqua;
-    }
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-}
-
-.wrapper {
-  margin: -5px;
-}
-
-.introBox {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: 50%;
-  left: 30%;
-  transform: (-50%, 0);
-  height: 350px;
-  width: 600px;
-
-  img {
-    border-radius: 50%;
-    margin-left: -100px;
-    border: $goldBorder;
-    max-width: 150px;
-  }
-
-  .introText {
-    margin: 0 5px 10px 20px;
-  }
-
-  h1 {
-    // height: 100px;
-    align-self: center;
-    border-bottom: $goldBorder;
-    width: 70%;
-    padding-bottom: 10px;
-  }
-
-  p {
-    margin: 0;
-    width: 80%;
-    color: white;
-    font-size: 1.4em;
-  }
 }
 
 .aboutMe {
