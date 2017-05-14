@@ -5,7 +5,11 @@
 @import 'nav';
 @import 'intro';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
-
+.overflow {
+  background-color: $green;
+  height: 300px;
+  margin: -10px
+}
 h1,
 h2,
 h3 {
@@ -34,19 +38,22 @@ html {
 }
 
 .aboutMe {
-  // visibility: hidden;
-  background-color: $golden;
-  min-height: 300px;
-  margin: -10px -10px -10px -10px;
-  padding: 20px;
   display: flex;
-  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $golden;
+  // min-height: 300px;
+  // margin: -10px -10px -10px -10px;
+  // padding: 20px;
+  // position: fixed;
   bottom: 0;
 
   p {
     margin: 15px;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    font-weight: 300;
     flex: 1;
+    text-align: center;
   }
 
   img {

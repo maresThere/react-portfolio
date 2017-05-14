@@ -59,6 +59,7 @@ class App extends Component {
           </Switch>
           <Nav />
         </div>
+        <div className='overflow' />
       </div>
     </Router>
   }
