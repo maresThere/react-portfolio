@@ -5,11 +5,13 @@
 @import 'nav';
 @import 'intro';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
+
 .overflow {
   background-color: $green;
   height: 300px;
-  margin: -10px
+  margin: -10px;
 }
+
 h1,
 h2,
 h3 {
@@ -45,6 +47,7 @@ html {
   // min-height: 300px;
   // margin: -10px -10px -10px -10px;
   margin: 20px;
+  box-shadow: 1px 1px black;
 
   p {
     margin: 15px;
@@ -65,11 +68,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  min-height: 350px;
   background-color: $aqua;
+  margin: 20px;
 
   .workee {
-    display: flex;
+    // display: flex;
+    align-self: center;
   }
 
   a {
