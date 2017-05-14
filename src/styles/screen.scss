@@ -65,24 +65,29 @@ html {
 }
 
 .myWork {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 350px;
+  min-height: 900px;
   background-color: $aqua;
   margin: 20px;
 
   .workee {
-    // display: flex;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Kapture {
+    width: 275px;
+    height: 275px;
   }
 
   a {
     border: 2px solid white;
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 275px;
+    height: 300px;
+    margin: 5px;
     text-align: center;
     text-decoration: none;
     color: white;
