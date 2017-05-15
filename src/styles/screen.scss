@@ -4,18 +4,12 @@
 @import 'resume';
 @import 'nav';
 @import 'intro';
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,800');
-
-.overflow {
-  background-color: $green;
-  height: 300px;
-  margin: -10px;
-}
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700');
 
 h1,
 h2,
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   color: white;
 }
 
@@ -66,7 +60,7 @@ html {
 
 .myWork {
   min-height: 900px;
-  background-color: $aqua;
+  // background-color: $aqua;
   margin: 20px;
 
   .workee {
@@ -76,8 +70,9 @@ html {
   }
 
   .Kapture {
-    width: 275px;
-    height: 275px;
+    display: none;
+    width: 200px;
+    height: 200px;
   }
 
   a {

@@ -1,41 +1,53 @@
 @media screen and (min-width: 481px) {
-  .navLinks {
+  ul.navLinks {
     flex-direction: row;
     position: fixed;
-    height: 80px;
+    top: 0;
+    height: 70px;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    background-color: $sheeraqua;
+    justify-content: space-around;
+    background-color: transparent;
     margin: -10px -5px 0 -5px;
-    border-bottom: $goldBorder;
-    list-style: none;
-    z-index: 1;
+    // border-bottom: $goldBorder;
 
-    .navBtn {
-      display: inline;
-      flex: 0 1 auto;
+    li.navBtn {
       width: 100px;
-      border: 1px solid white;
-      margin-right: 50px;
-      font-weight: 300;
-      text-align: center;
-      transition: 0.5s;
-    }
-
-    .navBtn:hover {
-      transform: scale(1);
-      background-color: white;
+      border: none;
+      margin-right: 0;
 
       a {
-        color: $aqua;
+        color: darken($golden, 2%);
       }
     }
+  }
 
-    a {
-      color: white;
-      text-decoration: none;
-      text-align: center;
+  div.introBox {
+    margin-top: 300px;
+  }
+
+  section.aboutMe {
+    flex-direction: row;
+    position: relative;
+    top: 300px;
+    width: 100%;
+    margin: 0;
+    animation: slideIn 1s linear;
+
+    p {
+      text-align: left;
+      font-size: 1em;
     }
+  }
+
+  .myWork {
+    flex-direction: row;
+    height: 300px;
+    margin: 0;
+  }
+
+  .workee {
+    width: 25%;
+    flex-direction: row;
   }
 }

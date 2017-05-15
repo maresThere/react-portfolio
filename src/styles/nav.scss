@@ -9,26 +9,27 @@
     flex: 0 1 auto;
     width: 100%;
     height: 30px;
-    border: 1px solid white;
+    border: 1px solid darken($golden, 30%);
     font-size: 1.5em;
     margin: 5px 0;
     padding: 0;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
     transition: 0.5s;
   }
 
   .navBtn:hover {
     transform: scale(1);
-    background-color: white;
+    background-color: $golden;
+    border: none;
 
     a {
-      color: $aqua;
+      color: darken($aqua, 60%);
     }
   }
 
   a {
-    color: white;
+    color: darken($golden, 20%);
     text-decoration: none;
     text-align: center;
   }

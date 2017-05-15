@@ -47,8 +47,11 @@ class App extends Component {
         <div id='color_layer' />
         <div className='bgImage' />
         <div className='mainContainer'>
+          <Route exact path='/' render={(props) => {
+            return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
+          }} />
           <Switch>
-            <Route exact path='/Intro' render={(props) => {
+            <Route path='/intro' render={(props) => {
               return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
             }} />
             <Route path='/about' component={About} />
