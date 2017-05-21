@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Intro from './Intro'
 import About from './About'
 import Resume from './Resume'
+import Decor from './Decor'
 
 class App extends Component {
   state = {
@@ -64,6 +65,7 @@ class App extends Component {
         </div>
         <Nav />
         <Footer />
+        <Decor />
       </div>
     </Router>
   }
