@@ -1,15 +1,17 @@
 @import 'utility';
 
 .bgImage {
+  background-image: url('../images/officeBG.jpg');
+  height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-image: url('../images/officeBG.jpg');
+  bottom: 0;
+  right: 0;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   z-index: -2;
   filter: brightness(90%) contrast(90%) blur(2px) grayscale(10%);
 }
@@ -22,5 +24,5 @@
   height: 100%;
   background-color: $aqua;
   opacity: 0.2;
-  z-index: -1;
+  z-index: -2;
 }

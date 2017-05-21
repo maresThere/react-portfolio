@@ -5,6 +5,7 @@ Switch,
 Route } from 'react-router-dom'
 import Gitcall from './Gitcall'
 import Nav from './Nav'
+import Footer from './Footer'
 import Intro from './Intro'
 import About from './About'
 import Resume from './Resume'
@@ -43,7 +44,7 @@ class App extends Component {
 
   render () {
     return <Router>
-      <div>
+      <div className='App'>
         <div id='color_layer' />
         <div className='bgImage' />
         <div className='mainContainer'>
@@ -60,9 +61,9 @@ class App extends Component {
             }} />
             <Route path='/resume' component={Resume} />
           </Switch>
-          <Nav />
         </div>
-        <div className='overflow' />
+        <Nav />
+        <Footer />
       </div>
     </Router>
   }

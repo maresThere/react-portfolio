@@ -1,36 +1,49 @@
-.navLinks {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  list-style: none;
-  z-index: 1;
+@media screen and (min-width: 768px) {
+  .navLinks {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 700px;
+    top: 0;
+    border-bottom: 1px solid darken($golden, 10%);
+    padding-left: 0;
+    margin: 30px auto;
+    list-style: none;
+    z-index: 1;
 
-  .navBtn {
-    flex: 0 1 auto;
-    width: 100%;
-    height: 30px;
-    border: 1px solid darken($golden, 30%);
-    font-size: 1.5em;
-    margin: 5px 0;
-    padding: 0;
-    font-weight: 500;
-    text-align: center;
-    transition: 0.5s;
-  }
+    li.navBtn {
+      flex: 0 1 auto;
+      height: 30px;
+      font-size: 1.5em;
+      margin: 5px 0;
+      padding: 0;
+      font-weight: 400;
+      text-align: center;
+      transition: 0.5s;
+    }
 
-  .navBtn:hover {
-    transform: scale(1);
-    background-color: $golden;
-    border: none;
+    .navBtn:hover {
+      transform: scale(1);
+      background-color: $golden;
+      border: none;
+
+      a {
+        color: darken($aqua, 60%);
+      }
+    }
 
     a {
-      color: darken($aqua, 60%);
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      width: 150px;
     }
   }
 
-  a {
-    color: darken($golden, 20%);
-    text-decoration: none;
-    text-align: center;
+  .decor {
+    font-size: 2em;
+    color: $golden;
+    text-shadow: 1px 1px $golden;
   }
 }
