@@ -5,17 +5,22 @@
 @import 'nav';
 @import 'intro';
 @import 'footer';
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600');
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
+  font-family: $heading-font-fam;
   color: white;
 }
 
 html {
   @include full-height;
-  font-family: 'Anonymous Pro', monospace;
+
+  font-family: $body-font-fam;
   font-size: $base-text-size;
 }
 
@@ -109,6 +114,109 @@ html {
   }
 }
 
-// .ResumeImg {
-//   display: none;
-// }
+.resume {
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 150px;
+  background-color: white;
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  h3 {
+    padding-top: 30px;
+  }
+
+  h3.exp {
+    width: 400px;
+    border-bottom: 1px solid $golden;
+  }
+
+  h3.sedu {
+    width: 250px;
+    border-bottom: 1px solid $golden;
+  }
+
+  h4 {
+    margin: 5px 0;
+  }
+
+  h5 {
+    margin: 5px 0;
+    font-style: italic;
+  }
+
+  .asa {
+    font-family: $body-font-fam;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+}
+
+.experience {
+  max-width: 450px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul.bullets {
+  margin-top: 2px;
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+
+.skillsEducation {
+  width: 300px;
+  margin-left: 5px;
+}
+
+.skills {
+  line-height: 1.4em;
+}
+
+.skillset {
+  width: 250px;
+}
+
+.placeDate {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.experience .placeDate {
+  width: 400px;
+}
+
+.skillsEducation .placeDate {
+  width: 275px;
+}
+
+.edu {
+  margin-bottom: 20px;
+}
+
+.otherExp {
+  display: flex;
+  flex-direction: column;
+}
+
+.mgtJobs {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
