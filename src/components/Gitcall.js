@@ -11,7 +11,7 @@ class Gitcall extends Component {
       </div>
     })
     return (<div className='projects'>
-      <h2>- IRON YARD PROJECTS -</h2>
+      <h2>&diams; IRON YARD PROJECTS &diams;</h2>
       <p>My education at The Iron Yard included building always working on improving css and more efficient code.</p>
       <ul className='myWork'>
         <li className='work'>{links[0]}</li>

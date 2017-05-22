@@ -2,6 +2,9 @@
   .navLinks {
     display: none;
   }
+  .decor {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -21,29 +24,44 @@
     li.navBtn {
       flex: 0 1 auto;
       height: 30px;
-      font-size: 1.5em;
-      margin: 5px 0;
-      padding: 0;
-      font-weight: 400;
+      font-size: 1.7em;
+      margin: 5px;
+      padding: 5px;
+      font-family: $heading-font-fam;
+      font-weight: 300;
       text-align: center;
       transition: 0.5s;
+      width: 100%;
     }
 
-    .navBtn:hover {
-      transform: scale(1);
-      background-color: $golden;
-      border: none;
-
-      a {
-        color: darken($aqua, 60%);
-      }
+    .hov {
+      font-size: 0.7em;
+      color: transparent;
     }
 
-    a {
+    a:link {
       color: white;
       text-decoration: none;
       text-align: center;
       width: 150px;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    .navBtn:hover {
+      transform: scale(1);
+      // background-color: $golden;
+      border: none;
+
+      .hov {
+        color: $golden;
+      }
+    }
+
+    a:active {
+      color: $golden;
     }
   }
 

@@ -2,29 +2,7 @@
   div.introBox {
     margin-top: 300px;
   }
-
-  section.aboutMe {
-    flex-direction: row;
-    position: relative;
-    top: 300px;
-    width: 100%;
-    margin: 0;
-    animation: slideIn 1s linear;
-
-    p {
-      text-align: left;
-      font-size: 1em;
-    }
-  }
-
-  .ResumeImg {
-    display: flex;
-    justify-content: center;
-    height: 125vh;
-    margin-top: 80px;
-  }
 }
-
 @media screen and (min-width: 768px) {
   footer {
     display: none;
@@ -32,6 +10,7 @@
     max-width: 1400px;
   }
 
+  //projects
   .myWork {
     max-width: 1000px;
     display: flex;
