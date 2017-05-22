@@ -4,7 +4,7 @@ class Resume extends Component {
   render () {
     return <div className='resume'>
       <div className='experience'>
-        <h3 className='exp'>EXPERIENCE</h3>
+        <h3 className='exp'><span className='resDecor'>&diams;</span> EXPERIENCE</h3>
         <h4>Front End Engineering</h4>
         <div className='placeDate'>
           <span className='place'>The Iron Yard</span><span className='date'>3/2017 - 6/2017</span></div>
@@ -46,7 +46,7 @@ class Resume extends Component {
       </div>
       <div className='skillsEducation'>
         <div className='skillset'>
-          <h3 className='sedu'>SKILLS</h3>
+          <h3 className='sedu'><span className='resDecor'>&diams;</span> SKILLS</h3>
           <p className='skills'>HTML5, CSS3, Sass, React,<br />
            Javascript, Bootstrap, GraphQL,<br />
           MobX, Git, GitHub, webpack,
@@ -55,7 +55,7 @@ class Resume extends Component {
          Yardi, Realpage, 3Dcart</p>
         </div>
         <div className='education'>
-          <h3 className='sedu'>EDUCATION</h3>
+          <h3 className='sedu'><span className='resDecor'>&diams;</span> EDUCATION</h3>
           <div className='edu'>
             <h4>Front End Engineering</h4>
             <div className='placeDate'>
@@ -74,7 +74,7 @@ Minor: Management Information  Systems</h4>
           <span className='place'>University of South Florida </span><span className='date'>5/1999</span></div>
       </div>
       <div className='otherExp'>
-        <h3 className='exp'>ADDITIONAL EXPERIENCE</h3>
+        <h3 className='addExp'><span className='resDecor'>&diams;</span> ADDITIONAL EXPERIENCE</h3>
         <div className='placeDate'>
           <span className='place'>Business Manager, Pinnacle Family of Companies</span><span className='date'>4/2013 - 1/2014</span>
         </div>

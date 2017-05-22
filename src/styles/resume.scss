@@ -1,70 +1,136 @@
-.Resume {
-  display: grid;
-  max-width: 90%;
-  margin: 0 auto;
-  height: 95vh;
-  align-content: center;
-  grid-template-columns: 50% 50%;
-
-  .heading {
-    grid-column: 2/3;
-    // grid-row: 1/2;
-  }
+.resume {
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 150px;
+  background-color: white;
 
   h2,
+  h3,
+  h4,
+  h5 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
   h3 {
-    color: black;
-    margin-top: 15px;
-    margin-bottom: 3px;
+    padding-top: 30px;
   }
 
-  .education {
-    grid-column: 1/3;
-    background-color: whitesmoke;
-    padding: 10px;
-    color: black;
-    margin-top: 80px;
-    margin-bottom: 1px;
-
-    .edu1 {
-      display: grid;
-    }
-
-    h4 {
-      grid-column: 1/2;
-      align-items: center;
-      margin: 2px;
-    }
-
-    .date {
-      grid-column: 1/2;
-      justify-self: start;
-    }
-
-    p {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
+  h3.exp {
+    width: 400px;
+    border-bottom: 1px solid $golden;
   }
 
-  .experience {
-    grid-column: 1/3;
-    background-color: whitesmoke;
-    padding: 10px;
-    color: black;
-    margin-top: 80px;
-    margin-bottom: 1px;
+  h3.sedu {
+    width: 250px;
+    border-bottom: 1px solid $golden;
+  }
 
-    h2,
-    h3 {
-      color: black;
-      margin-top: 15px;
-      margin-bottom: 3px;
-    }
+  h3.addExp {
+    width: 600px;
+    border-bottom: 1px solid $golden;
+  }
 
-    p {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
+  h4 {
+    margin: 5px 0;
+  }
+
+  h5 {
+    margin: 5px 0;
+    font-style: italic;
+  }
+
+  .resDecor {
+    color: $golden;
+  }
+
+  .asa {
+    font-family: $body-font-fam;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+}
+
+.experience {
+  max-width: 450px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul.bullets {
+  margin-top: 2px;
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+
+.skillsEducation {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.skills {
+  line-height: 1.4em;
+}
+
+.skillset {
+  width: 250px;
+}
+
+.placeDate {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.experience .placeDate {
+  width: 400px;
+}
+
+.skillsEducation .placeDate {
+  width: 275px;
+}
+
+.edu {
+  margin-bottom: 20px;
+}
+
+.otherExp {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.mgtJobs {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 481px) {
+  .diamonds
+  .bullets,
+  .asa,
+  .otherExp {
+    display: none;
+  }
+
+  .resume {
+    width: 400px;
+  }
+
+  .h3.exp,
+  .experience,
+  .experience .placeDate,
+  .addExp {
+    width: 350px;
   }
 }
