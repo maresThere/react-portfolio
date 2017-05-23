@@ -118,6 +118,7 @@ ul.bullets {
 @media screen and (max-width: 481px) {
   .diamonds
   .bullets,
+  li,
   .asa,
   .otherExp {
     display: none;
@@ -127,10 +128,14 @@ ul.bullets {
     width: 400px;
   }
 
+  .experience h3.exp {
+    width: 300px;
+  }
+
   .h3.exp,
   .experience,
   .experience .placeDate,
   .addExp {
-    width: 350px;
+    width: 310px;
   }
 }
