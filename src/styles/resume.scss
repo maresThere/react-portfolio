@@ -116,9 +116,8 @@ ul.bullets {
 }
 
 @media screen and (max-width: 481px) {
-  .diamonds
-  .bullets,
-  li,
+  .diamonds,
+  ul.bullets,
   .asa,
   .otherExp {
     display: none;
