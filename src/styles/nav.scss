@@ -9,15 +9,18 @@
 
 @media screen and (min-width: 768px) {
   .navLinks {
+    background-color: rgba(0, 0, 0, 0.5);
+
+padding: 0.5em;
     display: flex;
     align-self: center;
     justify-content: space-around;
     position: fixed;
-    width: 700px;
+    width: 100%;
     top: 0;
     border-bottom: 1px solid darken($golden, 10%);
     padding-left: 0;
-    margin: 30px auto;
+    margin: 0 auto;
     list-style: none;
     z-index: 1;
 

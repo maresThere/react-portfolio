@@ -36,6 +36,16 @@ html {
   justify-content: center;
 }
 
+.pHeader {
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: $golden;
+  animation: slideIn 1s linear;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -46,17 +56,18 @@ html {
   h2 {
     margin: 0;
     align-self: center;
+    color: black;
   }
 
   p {
-    width: 400px;
+    width: 300px;
     align-self: center;
     margin: 5px;
     margin-left: 10px;
     font-size: 1.1em;
     font-weight: 300;
     text-align: left;
-    color: white;
+    color: black;
   }
 
   ul.myWork {
@@ -67,7 +78,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $golden;
     // margin-left: 2px;
     padding: 15px;
   }
@@ -76,5 +87,36 @@ html {
     width: 200px;
     height: 200px;
     margin: 5px;
+  }
+}
+
+.contact {
+  position: fixed;
+  left: 30%;
+  top: 50%;
+  width: 288px;
+  height: 100px;
+  background-color: $golden;
+  padding: 20px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  animation: slideIn 1s linear;
+
+  .contact .wrapper {
+    position: relative;
+    left: -50%;
+  }
+
+  h2 {
+    color: black;
+    margin: 0;
+  }
+
+  .cardName {
+    font-size: 2em;
+    border-bottom: 1px solid black;
+  }
+
+  .card {
+    margin-top: 10px;
   }
 }

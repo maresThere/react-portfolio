@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Intro from './Intro'
 import About from './About'
 import Resume from './Resume'
+import Contact from './Contact'
 import Decor from './Decor'
 
 class App extends Component {
@@ -61,6 +62,7 @@ class App extends Component {
               return <Gitcall {...props} work={this.state.work} />
             }} />
             <Route path='/resume' component={Resume} />
+            <Route path='/contact' component={Contact} />
           </Switch>
         </div>
         <Nav />

@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+// import ReactPDF from 'react-pdf';
 
 class Resume extends Component {
   render () {
     return <div className='resume'>
       <div className='experience'>
+        {/* <div className='pdflink'><a href='../images/resume.pdf'>pdf version</a></div> */}
         <h3 className='exp'><span className='resDecor'>&diams;</span> EXPERIENCE</h3>
         <h4>Front End Engineering</h4>
         <div className='placeDate'>

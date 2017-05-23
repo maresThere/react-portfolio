@@ -9,6 +9,7 @@ class Footer extends Component {
         <li className='footerBtn'> <NavLink to='/about'>about</NavLink></li>
         <li className='footerBtn'> <NavLink to='/work'>work</NavLink></li>
         <li className='footerBtn'> <NavLink to='/Resume'>resume</NavLink></li>
+        <li className='footerBtn'> <NavLink to='/Contact'>contact</NavLink></li>
       </ul>
     </footer>
   }

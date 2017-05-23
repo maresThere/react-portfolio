@@ -9,11 +9,11 @@ class About extends Component {
       <section className='aboutMe'>
         <div className='subAbout'>
           <img src={glasses} className='glasses' />
-          <p>I try to live on the grateful side of the street. Please don't attempt confirm that with my gym coach. There is beauty in everything around us. Animals are heaven. </p>
+          <p>A few things about me; I try to live life from a perspective of gratitude. Please don't attempt confirm that with my gym coach. There is beauty in everything around us. Pets are a gift.</p>
         </div>
         <div className='subAbout'>
           <img src={theIronYardLogo} className='TIY' />
-          <p>I am currently a Front End Development student at The Iron Yard in St. Petersburg, Florida. My completion date is June 2, 2017.</p>
+          <p>The Iron Yard coding bootcamp is my latest educational endevour. I took the Front End Engineering course. Twelve intense weeks of learning the latest front end technologies.</p>
         </div>
         <div className='subAbout'>
           <img src={light} className='light' /><p>Everyone wants visual appeal. Everyone wants function. I want to give people what they want.</p>

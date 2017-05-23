@@ -5,6 +5,7 @@
   justify-content: flex-start;
   margin-top: 150px;
   background-color: white;
+  animation: slideIn 1s linear;
 
   h2,
   h3,
@@ -125,6 +126,8 @@ ul.bullets {
 
   .resume {
     width: 400px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .experience h3.exp {
