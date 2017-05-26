@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import theIronYardLogo from '../images/theIronYardLogo.png'
 import glasses from '../images/glasses.png'
 import light from '../images/light.png'
+import me2017 from '../images/me2017.jpg'
+import mebw2017 from '../images/mebw2017.jpg'
 
 class About extends Component {
   render () {
-    return <div>
+    return <div className='aboutContainer'>
       <section className='aboutMe'>
         <div className='subAbout'>
           <img src={glasses} className='glasses' />
@@ -18,6 +20,10 @@ class About extends Component {
         <div className='subAbout'>
           <img src={light} className='light' /><p>Everyone wants visual appeal. Everyone wants function. I want to give people what they want.</p>
         </div>
+      </section>
+      <section className='mypics'>
+        <img src={mebw2017} className='mypics' />
+        <img src={me2017} className='mypics' />
       </section>
     </div>
   }

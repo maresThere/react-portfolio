@@ -7,7 +7,8 @@
 @import 'intro';
 @import 'footer';
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600');
+
 
 h1,
 h2,
@@ -90,33 +91,45 @@ html {
   }
 }
 
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.me22017 {
+  width: 300px;
+  height: 450px;
+  align-self: center;
+}
 .contact {
-  position: fixed;
-  left: 30%;
-  top: 50%;
-  width: 288px;
-  height: 100px;
-  background-color: $golden;
-  padding: 20px;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  // position: fixed;
+  // left: 20%;
+  // top: 50%;
+  width: 268px;
+  height: 430px;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  // margin: 10px;
+  // box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   animation: slideIn 1s linear;
 
-  .contact .wrapper {
-    position: relative;
-    left: -50%;
-  }
-
   h2 {
-    color: black;
+    color: $golden;
     margin: 0;
   }
 
   .cardName {
     font-size: 2em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $golden;
   }
 
   .card {
     margin-top: 10px;
+    color: $golden;
+
+    a {
+      color: $golden;
+    }
   }
 }

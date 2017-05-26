@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import GitHub from '../images/GitHub.png'
 class Gitcall extends Component {
   render () {
     const links = this.props.work.map((repo, i) => {
@@ -20,6 +20,7 @@ class Gitcall extends Component {
         <li className='work'>{links[1]}</li>
         <li className='work'>{links[2]}</li>
       </ul>
+      <div><img src={GitHub} /></div>
     </div>
     )
   }
