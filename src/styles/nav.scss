@@ -56,10 +56,11 @@ padding: 0.5em;
     }
 
     .navBtn:hover {
-      transform: scale(1);
+      // transform: scale(1);
 
       .hov {
-        color: white;
+        color: $golden;
+        transition: all 0.9s ease;
       }
     }
 
