@@ -16,6 +16,11 @@ class Contact extends Component {
             <span> email:&nbsp;</span>
             <a href='mailto:mareKellyJax@gmail.com'> mareKellyJax@gmail.com</a></p>
         </div>
+        <ul className='smLinks'>
+          <li><i className='fa fa-linkedin-square fa-lg' aria-hidden='true' /></li>
+          <li><i className='fa fa-instagram fa-lg' aria-hidden='true' /></li>
+          <li><i className='fa fa-github-square fa-lg' aria-hidden='true' /></li>
+        </ul>
       </div>
     </div>
   }

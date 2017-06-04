@@ -14,13 +14,9 @@ $sheeraqua: rgba(#85dbc2, 0.8);
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {
   padding-left: 0;
-
-  * {
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-  }
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
 }
 
 // Apply a height to the html and body elements to that they

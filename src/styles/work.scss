@@ -1,0 +1,95 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  margin: 5px 20px;
+
+  h2 {
+    margin: 0;
+    align-self: center;
+    color: $golden;
+  }
+
+  p {
+    width: 100%;
+    align-self: center;
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: left;
+    color: $golden;
+  }
+
+  ul.myWork {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+  }
+
+  li.work {
+    // width: 270px;
+    position: absolute;
+    left: 0;
+  }
+
+  .project {
+    display: flex;
+    width: 270px;
+    // flex-direction: row;
+    // justify-content: center;
+
+    // margin-left: 2px;
+    padding: 15px;
+  }
+
+  .github {
+    align-items: flex-end;
+    margin: 2px;
+  }
+
+  .Kapture {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+}
+
+.WebWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.webContainer {
+  list-style: none;
+  // width: 350px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    box-shadow: 3px 3px $golden;
+  }
+}
+
+.webEx {
+  width: 300px;
+  padding: 5px;
+}

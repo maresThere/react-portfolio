@@ -18,7 +18,7 @@ class About extends Component {
           <p>The Iron Yard coding bootcamp is my latest educational endevour. I took the Front End Engineering course. Twelve intense weeks of learning the latest front end technologies.</p>
         </div>
         <div className='subAbout'>
-          <img src={light} className='light' /><p>Everyone wants visual appeal. Everyone wants function. I want to give people what they want.</p>
+          <img src={light} className='light' /><p>Everyone wants visual appeal. Everyone wants function. I want to give people what they want. Give me content and I will make your dreams come true.</p>
         </div>
       </section>
       <section className='mypics'>
