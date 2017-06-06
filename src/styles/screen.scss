@@ -38,16 +38,6 @@ html {
   justify-content: center;
 }
 
-.pHeader {
-  // width: 300px;
-  margin-top: 50px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  animation: slideIn 1s linear;
-}
-
 .contactWrapper {
   display: flex;
   flex-direction: row;
@@ -96,11 +86,16 @@ html {
     color: $golden;
 
     @include reset-list;
+
     margin: 10px;
     justify-content: space-around;
 
-    li {
-
+    a:link,
+    a:visited,
+    a:active,
+    a:hover,
+    a:visited {
+      color: $golden;
     }
   }
 }

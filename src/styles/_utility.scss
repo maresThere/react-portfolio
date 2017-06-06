@@ -1,15 +1,11 @@
-$aqua: #85dbc2;
+
 $golden: #e8b866;
-$darkgray: #bcbdc0;
-$lightgray: #929598;
-
-
 $goldBorder: 5px solid $golden;
 $heading-font-fam: 'Josefin Sans', sans-serif;
 $body-font-fam: 'Merriweather', serif;
 $base-text-size: 14px;
 $base-font-weight: 400;
-$sheeraqua: rgba(#85dbc2, 0.8);
+$box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {

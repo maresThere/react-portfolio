@@ -1,5 +1,5 @@
 footer {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -18,6 +18,6 @@ ul.footerLinks {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $golden;
   font-weight: 700;
 }

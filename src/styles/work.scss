@@ -1,3 +1,41 @@
+
+h3,
+h4,
+h5 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.pHeader {
+  width: 100%;
+  margin: 60px 0 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  h2 {
+    width: 80%;
+    margin-left: 10%;
+    color: $golden;
+    border-bottom: 1px solid $golden;
+  }
+
+  p {
+    width: 80%;
+    margin: 0;
+    align-self: center;
+    font-family: $heading-font-fam;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    font-weight: 400;
+    text-align: left;
+    color: $golden;
+  }
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -5,45 +43,23 @@
   min-height: 300px;
   margin: 5px 20px;
 
-  h2 {
-    margin: 0;
-    align-self: center;
-    color: $golden;
-  }
-
-  p {
-    width: 100%;
-    align-self: center;
-    margin: 5px;
-    margin-left: 10px;
-    font-size: 1.1em;
-    font-weight: 300;
-    text-align: left;
-    color: $golden;
-  }
-
   ul.myWork {
-    width: 300px;
-    height: 300px;
-    position: relative;
     list-style: none;
     display: flex;
-    overflow: hidden;
-  }
+    flex-direction: column;
 
-  li.work {
-    // width: 270px;
-    position: absolute;
-    left: 0;
+    li.work {
+      width: 300px;
+      height: 250px;
+      align-self: center;
+    }
   }
 
   .project {
     display: flex;
     width: 270px;
-    // flex-direction: row;
-    // justify-content: center;
-
-    // margin-left: 2px;
+    flex-direction: row;
+    justify-content: center;
     padding: 15px;
   }
 
@@ -56,6 +72,7 @@
     width: 200px;
     height: 200px;
     margin: 5px;
+    box-shadow: $box-shadow;
   }
 }
 
@@ -63,33 +80,50 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
 
   h3 {
-    text-align: center;
-  }
-
-  p {
-    color: white;
+    text-align: left;
+    color: $golden;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
   }
 }
 
 .webContainer {
   list-style: none;
-  // width: 350px;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  img {
-    box-shadow: 3px 3px $golden;
-  }
 }
 
 .webEx {
-  width: 300px;
-  padding: 5px;
+  width: 250px;
+  padding: 10px;
+
+  img {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects ul.myWork {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .WebWork {
+    margin-left: 10px;
+  }
+
+  .webContainer {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
