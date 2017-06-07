@@ -20,7 +20,7 @@ class WebWork extends Component {
           <img src={thomaspromise} alt='Thomas Promise' />
         </li>
         <li className='webEx'>
-          <h3 className='title'>Mount Dora Chamber Site</h3>
+          <h3 className='title'>Mount Dora Chamber</h3>
           <img src={mtdora} alt='TMount Dora Chamber site' />
         </li>
       </ul>

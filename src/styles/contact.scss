@@ -1,0 +1,69 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.me22017 {
+  display: none;
+  width: 300px;
+  height: 450px;
+  align-self: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  // flex: 1;
+  width: 268px;
+  height: 175px;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  // margin: 10px;
+  // box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  animation: slideIn 1s linear;
+
+  h2 {
+    margin: 0;
+  }
+
+  .cardName {
+    font-size: 2em;
+    border-bottom: 1px solid $golden;
+  }
+
+  .card {
+    margin-top: 10px;
+
+    a:any-link {
+      text-decoration: none;
+      color: $golden;
+    }
+  }
+
+  .smLinks {
+    display: flex;
+
+    @include reset-list;
+
+    margin: 10px;
+    justify-content: space-around;
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover,
+    a:visited {
+      color: $golden;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .me22017 {
+    display: flex;
+    width: 300px;
+    height: 450px;
+    align-self: center;
+  }
+}

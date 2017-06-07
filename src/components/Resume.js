@@ -14,7 +14,7 @@ class Resume extends Component {
         <div className='placeDate'>
           <span className='place'>Vitamin Discount Center</span><span className='date'>12/2015 - 3/2017</span>
         </div>
-        <span className='asa'>As a Grapich Designer:</span>
+        <span className='asa'>As a Graphic Designer:</span>
         <ul className='bullets'>
           <li>Optimized images for web and print </li>
           <li>Layout magazine articles; typesetting & graphics</li>

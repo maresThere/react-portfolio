@@ -13,8 +13,8 @@ class Gitcall extends Component {
       </div>
     })
     return (<div className='projects'>
-      <div className='pHeader'>
-        <h2> IRON YARD PROJECTS</h2>
+      <div className='pHeader topMar60'>
+        <h2> REACT PROJECTS</h2>
         <p>The Iron Yard taught me how to program with React components. Each assignment was an opportunity to improve css skills and organize code more efficiently.</p>
       </div>
       <ul className='myWork'>

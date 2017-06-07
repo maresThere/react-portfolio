@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
-  margin: 15px;
+  margin: 15px 0;
   animation: slideIn 1s linear;
 
   p {
@@ -13,7 +13,6 @@
     font-size: 1.5em;
     flex: 1;
     text-align: left;
-    color: $golden;
     font-family: $heading-font-fam;
   }
 
@@ -40,6 +39,9 @@
   }
 }
 
+.mypics {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .aboutContainer {
@@ -49,15 +51,9 @@
   }
 
   .mypics {
+    display: flex;
     align-self: center;
   }
-  // .wapper {
-  //   position: fixed;
-  //   top: 100px;
-  //   background-color: $golden;
-  //   width: 700px;
-  //   height: 325px;
-  // }
 
   .aboutMe {
     flex-direction: column;
@@ -65,7 +61,6 @@
     top: 10px;
     height: 300px;
     animation: slideIn 1s linear;
-    // border: 3px inset black;
 
     .subAbout {
       display: flex;
@@ -74,7 +69,7 @@
 
     p {
       text-align: left;
-      font-size: 1em;
+      font-size: 1.2em;
       align-self: flex-end;
     }
   }

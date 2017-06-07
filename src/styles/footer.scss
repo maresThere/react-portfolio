@@ -1,23 +1,23 @@
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $golden;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-}
 
-ul.footerLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 30px;
-  padding-left: 0;
-  list-style: none;
-}
+  ul.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding-left: 0;
+    list-style: none;
+  }
 
-a {
-  text-decoration: none;
-  color: $golden;
-  font-weight: 700;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
 }

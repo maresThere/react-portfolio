@@ -6,10 +6,10 @@
 @import 'work';
 @import 'nav';
 @import 'intro';
+@import 'contact';
 @import 'footer';
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600');
-
 
 h1,
 h2,
@@ -17,7 +17,11 @@ h3,
 h4,
 h5 {
   font-family: $heading-font-fam;
-  color: white;
+  color: $golden;
+}
+
+a:any-link {
+  text-decoration: none;
 }
 
 html {
@@ -25,6 +29,7 @@ html {
 
   font-family: $body-font-fam;
   font-size: $base-text-size;
+  color: $golden;
 }
 
 .App {
@@ -36,66 +41,4 @@ html {
   display: flex;
   flex: 1;
   justify-content: center;
-}
-
-.contactWrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.me22017 {
-  width: 300px;
-  height: 450px;
-  align-self: center;
-}
-
-.contact {
-  // position: fixed;
-  // left: 20%;
-  // top: 50%;
-  width: 268px;
-  height: 430px;
-  align-self: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  // margin: 10px;
-  // box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-  animation: slideIn 1s linear;
-
-  h2 {
-    color: $golden;
-    margin: 0;
-  }
-
-  .cardName {
-    font-size: 2em;
-    border-bottom: 1px solid $golden;
-  }
-
-  .card {
-    margin-top: 10px;
-    color: $golden;
-
-    a {
-      color: $golden;
-    }
-  }
-
-  .smLinks {
-    display: flex;
-    color: $golden;
-
-    @include reset-list;
-
-    margin: 10px;
-    justify-content: space-around;
-
-    a:link,
-    a:visited,
-    a:active,
-    a:hover,
-    a:visited {
-      color: $golden;
-    }
-  }
 }
