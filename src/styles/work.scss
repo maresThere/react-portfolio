@@ -14,7 +14,6 @@ h5 {
 a.pic1,
 a.pic2,
 a.pic3 {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 1px;
 }
 
@@ -24,12 +23,11 @@ a.pic3 {
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: rgba(0, 0, 0, 0.5);
 
   h2 {
     width: 80%;
     margin: 7px 10%;
-    border-bottom: 1px solid $golden;
+    // border-bottom: 1px solid $golden;
   }
 
   p {
@@ -48,15 +46,18 @@ a.pic3 {
   flex-direction: column;
   justify-content: center;
   min-height: 300px;
-  margin: 5px 20px;
+  margin: 10% 5px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
 
   ul.myWork {
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
 
     li.work {
-      width: 300px;
+      width: 250px;
       height: 250px;
       align-self: center;
     }
@@ -64,8 +65,8 @@ a.pic3 {
 
   .project {
     display: flex;
-    width: 270px;
-    flex-direction: row;
+    width: 200px;
+    flex-direction: column;
     justify-content: center;
     padding: 15px;
   }
@@ -87,11 +88,11 @@ a.pic3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 30px;
 
   h3 {
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
+    margin: 5px;
   }
 }
 
@@ -106,7 +107,7 @@ a.pic3 {
 
 .webEx {
   width: 250px;
-  padding: 10px;
+  padding: 7px;
 
   img {
     width: 250px;
