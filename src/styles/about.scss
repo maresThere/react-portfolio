@@ -7,6 +7,16 @@
   margin: 15px 0;
   animation: slideIn 1s linear;
 
+  .deviconContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  .devicon {
+    font-size: 2em;
+  }
+
   p {
     margin: 5px;
     margin-left: 7px;
@@ -69,7 +79,7 @@
 
     p {
       text-align: left;
-      font-size: 1.2em;
+      font-size: 1.3em;
       align-self: flex-end;
     }
   }

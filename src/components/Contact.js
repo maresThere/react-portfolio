@@ -17,10 +17,10 @@ class Contact extends Component {
             <a href='mailto:mareKellyJax@gmail.com'> mareKellyJax@gmail.com</a></p>
         </div>
         <ul className='smLinks'>
-          <li><a href='https://www.linkedin.com/in/marianne-kelly-72990761/'><i className='fa fa-linkedin-square fa-2x' aria-hidden='true' /></a></li>
-          <li><a href='https://www.instagram.com/marekellymk/'><i className='fa fa-instagram fa-2x' aria-hidden='true' /></a></li>
-          <li><a href='https://github.com/maresThere'><i className='fa fa-github-square fa-2x' aria-hidden='true' /></a></li>
-          <li><a href='https://twitter.com/mareKellyWebDev'><i className='fa fa-twitter-square fa-2x' aria-hidden='true' /></a></li>
+          <li><a href='https://www.linkedin.com/in/marekelly'target='_blank'><i className='fa fa-linkedin-square fa-2x' aria-hidden='true' /></a></li>
+          <li><a href='https://www.instagram.com/marekellymk/'target='_blank'><i className='fa fa-instagram fa-2x' aria-hidden='true' /></a></li>
+          <li><a href='https://github.com/maresThere'target='_blank'><i className='fa fa-github-square fa-2x' aria-hidden='true' /></a></li>
+          <li><a href='https://twitter.com/mareKellyWebDev' target='_blank'><i className='fa fa-twitter-square fa-2x' aria-hidden='true' /></a></li>
         </ul>
       </div>
     </div>
