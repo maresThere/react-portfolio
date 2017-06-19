@@ -14,8 +14,21 @@ class Gitcall extends Component {
       </div>
     })
     return (<div className='projects'>
-      <codePen />
-      <div className='pHeader topMar60'>
+      <div className='CSScontainer topMar60'>
+        <div className='five animated infinite flash' />
+        <div className='heart animated infinite pulse' />
+        <div className='triContainer'>
+          <div className='topTriangles'>
+            <div className='one animated infinite fadeIn' />
+            <div className='two animated infinite fadeIn' />
+            <div className='three animated infinite fadeIn' />
+          </div>
+          <div className='bottomTriangles'>
+            <div className='four' />
+          </div>
+        </div>
+      </div>
+      <div className='pHeader'>
         <h2> REACT PROJECTS</h2>
         <p>The Iron Yard taught me how to program with React components. Each assignment was an opportunity to improve css skills and organize code more efficiently.</p>
       </div>
@@ -26,6 +39,7 @@ class Gitcall extends Component {
         <li className='work'>{links[2]}</li>
       </ul>
       <WebWork />
+      <codePen />
     </div>
     )
   }

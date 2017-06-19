@@ -115,74 +115,78 @@ a.pic3 {
   }
 }
 
-.container {
+.CSScontainer {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-   margin-top: 100px;
-
+  align-self: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 325px;
+  height: 100px;
 }
+
 .five {
+  margin-top: 15px;
   width: 0;
   height: 0;
-  border-left: solid 100px transparent;
-   border-right: solid 100px transparent;
-   border-bottom: solid 70px yellow;
-  transform: rotatez(35deg);
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-bottom: solid 35px yellow;
+  transform: rotateZ(35deg);
   animation-duration: 7s;
 }
-.five:before {
+
+.five::before {
   position: absolute;
   display: block;
   content: '';
-   width: 0;
+  width: 0;
   height: 0;
-  top: -45px;
-  left: -65px;
-  border-left: solid 30px transparent;
-   border-right: solid 30px transparent;
-   border-bottom: solid 80px yellow;
-  transform: rotatez(-35deg);
+  top: -27px;
+  left: -35px;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-bottom: solid 40px yellow;
+  transform: rotateZ(-35deg);
 }
-.five:after {
-   position: absolute;
+
+.five::after {
+  position: absolute;
   display: block;
   content: '';
-   width: 0;
+  width: 0;
   height: 0;
   top: 3px;
-  left: -105px;
-  border-left: solid 100px transparent;
-   border-right: solid 100px transparent;
-   border-bottom: solid 70px yellow;
-  transform: rotatez(-70deg);
+  left: -53px;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-bottom: solid 33px yellow;
+  transform: rotateZ(-70deg);
 }
 
 .heart {
   position: relative;
-  margin: 20px;
-  height: 170px;
-  width: 200px;
+  // margin: 20px;
+  width: 100px;
+}
 
-  }
-.heart:before,
-.heart:after {
+.heart::before,
+.heart::after {
   position: absolute;
   content: "";
-  width: 100px;
-  height: 160px;
-  top: 5px;
+  width: 50px;
+  height: 80px;
+  // top: 5px;
   background: red;
   border-radius: 50px 50px 0 0;
 }
 
-.heart:before {
-  left: 100px;
+.heart::before {
+  left: 50px;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
 
-.heart:after {
+.heart::after {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
@@ -204,30 +208,30 @@ a.pic3 {
 .one {
   width: 0;
   height: 0;
-  border-right: solid 50px transparent;
-  border-left: solid 50px transparent;
-  border-bottom: solid 75px #64b5f6;
+  border-right: solid 25px transparent;
+  border-left: solid 25px transparent;
+  border-bottom: solid 35px #64b5f6;
   animation-duration: 1s;
 }
 
 .two {
-  margin-left: -50px;
+  margin-left: -25px;
   width: 0;
   height: 0;
-  border-right: solid 50px transparent;
-  border-left: solid 50px transparent;
-  border-top: solid 75px #2196f3;
+  border-right: solid 25px transparent;
+  border-left: solid 25px transparent;
+  border-top: solid 35px #2196f3;
   animation-duration: 1s;
   animation-delay: 0.5s;
 }
 
 .three {
-  margin-left: -50px;
+  margin-left: -25px;
   width: 0;
   height: 0;
-  border-left: solid 50px transparent;
-  border-right: solid 50px transparent;
-  border-bottom: solid 75px #1976d2;
+  border-left: solid 25px transparent;
+  border-right: solid 25px transparent;
+  border-bottom: solid 35px #1976d2;
   animation-duration: 2s;
   animation-delay: 1s;
 }
@@ -235,9 +239,9 @@ a.pic3 {
 .four {
   width: 0;
   height: 0;
-  border-top: solid 100px #2196f3;
-  border-left: solid 100px transparent;
-  border-right: solid 100px transparent;
+  border-top: solid 50px #2196f3;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
 }
 
 @keyframes fadeIn {
@@ -251,6 +255,9 @@ a.pic3 {
 }
 
 @media screen and (min-width: 768px) {
+  .CSScontainer {
+    width: 600px;
+  }  
   .projects ul.myWork {
     max-width: 1000px;
     display: flex;
