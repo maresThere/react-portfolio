@@ -115,6 +115,141 @@ a.pic3 {
   }
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+   margin-top: 100px;
+
+}
+.five {
+  width: 0;
+  height: 0;
+  border-left: solid 100px transparent;
+   border-right: solid 100px transparent;
+   border-bottom: solid 70px yellow;
+  transform: rotatez(35deg);
+  animation-duration: 7s;
+}
+.five:before {
+  position: absolute;
+  display: block;
+  content: '';
+   width: 0;
+  height: 0;
+  top: -45px;
+  left: -65px;
+  border-left: solid 30px transparent;
+   border-right: solid 30px transparent;
+   border-bottom: solid 80px yellow;
+  transform: rotatez(-35deg);
+}
+.five:after {
+   position: absolute;
+  display: block;
+  content: '';
+   width: 0;
+  height: 0;
+  top: 3px;
+  left: -105px;
+  border-left: solid 100px transparent;
+   border-right: solid 100px transparent;
+   border-bottom: solid 70px yellow;
+  transform: rotatez(-70deg);
+}
+
+.heart {
+  position: relative;
+  margin: 20px;
+  height: 170px;
+  width: 200px;
+
+  }
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 160px;
+  top: 5px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+}
+
+.heart:before {
+  left: 100px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.triContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topTriangles {
+  display: flex;
+}
+
+.bottomTriangles {
+  display: flex;
+}
+
+.one {
+  width: 0;
+  height: 0;
+  border-right: solid 50px transparent;
+  border-left: solid 50px transparent;
+  border-bottom: solid 75px #64b5f6;
+  animation-duration: 1s;
+}
+
+.two {
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-right: solid 50px transparent;
+  border-left: solid 50px transparent;
+  border-top: solid 75px #2196f3;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.three {
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  border-bottom: solid 75px #1976d2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.four {
+  width: 0;
+  height: 0;
+  border-top: solid 100px #2196f3;
+  border-left: solid 100px transparent;
+  border-right: solid 100px transparent;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects ul.myWork {
     max-width: 1000px;

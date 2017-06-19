@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import GitHub from '../images/GitHub.png'
 import WebWork from './WebWork'
+import codePen from './codePen'
 
 class Gitcall extends Component {
   render () {
@@ -13,6 +14,7 @@ class Gitcall extends Component {
       </div>
     })
     return (<div className='projects'>
+      <codePen />
       <div className='pHeader topMar60'>
         <h2> REACT PROJECTS</h2>
         <p>The Iron Yard taught me how to program with React components. Each assignment was an opportunity to improve css skills and organize code more efficiently.</p>
