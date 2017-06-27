@@ -20,7 +20,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   // margin: 10px;
-  // box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 4px 2px rgb(55, 29, 74);
   animation: slideIn 1s linear;
 
   h2 {
@@ -65,5 +65,6 @@
     width: 300px;
     height: 450px;
     align-self: center;
+    box-shadow: 2px 4px 4px rgb(55, 29, 74);
   }
 }
