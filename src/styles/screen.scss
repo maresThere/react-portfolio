@@ -30,6 +30,7 @@ html {
   font-family: $body-font-fam;
   font-size: $base-text-size;
   color: $golden;
+  background-color: #743d9b;
 }
 
 .App {
@@ -41,4 +42,40 @@ html {
   display: flex;
   flex: 1;
   justify-content: center;
+}
+
+
+.smLinksB {
+  position: fixed;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 10px;
+  text-shadow: 1px 2px 3px black;
+
+  @include reset-list;
+
+  margin: 10px;
+  justify-content: space-around;
+
+  a:link,
+  a:visited,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $golden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .smLinksB {
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    margin: 10px;
+    top: -17px;
+    height: 10px;
+    width: 100%;
+  }
 }

@@ -3,14 +3,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 15px 0;
+  background-color: rgba(55, 29, 74, 0.7);
+  margin: 30px 0;
+  box-shadow: 2px 4px 2px rgb(55, 29, 74);
   animation: slideIn 1s linear;
 
   .deviconContainer {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+  }
+
+  .bigger {
+    font-weight: 600;
+    font-size: 1.1em;
   }
 
   .devicon {
@@ -31,22 +37,6 @@
     margin: 0 auto;
     padding: 10px;
   }
-
-  .glasses {
-    height: 26px;
-    width: 60px;
-    box-sizing: 5px 5px white;
-  }
-
-  .TIY {
-    height: 60px;
-    width: 60px;
-  }
-
-  .light {
-    height: 68px;
-    width: 60px;
-  }
 }
 
 .mypics {
@@ -63,6 +53,7 @@
   .mypics {
     display: flex;
     align-self: center;
+    box-shadow: 2px 4px 2px rgb(55, 29, 74);
   }
 
   .aboutMe {

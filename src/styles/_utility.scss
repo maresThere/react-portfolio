@@ -7,6 +7,9 @@ $base-text-size: 14px;
 $base-font-weight: 400;
 $box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
+* {
+  border-radius: 3px;
+}
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {
   padding-left: 0;
