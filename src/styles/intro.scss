@@ -63,7 +63,10 @@ figure {
 
 .star,
 .star2,
-.star3, {
+.star3,
+.star4,
+.star5,
+.star6, {
   display: block;
   position: absolute;
   bottom: 20%;
@@ -83,13 +86,31 @@ figure {
 }
 
 .star2 {
-  bottom: 23%;
+  bottom: 18%;
   right: 13%;
   animation-delay: 1s;
 }
 
 .star3 {
   bottom: 30%;
+  right: 7%;
+  animation-delay: 500ms;
+}
+
+.star4 {
+  top: 18%;
+  right: 7%;
+  animation-delay: 1s;
+}
+
+.star5 {
+  top: 40%;
+  right: 5%;
+  animation-delay: 500ms;
+}
+
+.star6 {
+  top: 15%;
   right: 15%;
   animation-delay: 500ms;
 }

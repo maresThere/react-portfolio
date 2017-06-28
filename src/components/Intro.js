@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Starz from './Starz'
 import mareKelly from '../images/mareKelly.jpeg'
 
 class Intro extends Component {
@@ -13,20 +14,7 @@ class Intro extends Component {
             <p>{this.props.bio}</p>
           </div>
         </div>
-        <div className='starzContainer'>
-          <figure className='star'>
-            <figure className='star-top' />
-            <figure className='star-bottom' />
-          </figure>
-          <figure className='star2'>
-            <figure className='star-top' />
-            <figure className='star-bottom' />
-          </figure>
-          <figure className='star3'>
-            <figure className='star-top' />
-            <figure className='star-bottom' />
-          </figure>
-        </div>
+        <Starz />
       </div>
     )
   }
