@@ -67,7 +67,7 @@ class App extends Component {
         </div>
         <Nav />
         <Footer />
-        <Decor />
+        {/* <Decor /> */}
       </div>
     </Router>
   }

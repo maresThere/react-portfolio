@@ -1,15 +1,28 @@
 .introContainer {
+  display: flex;
+  flex-direction: column;
   background-color: #833db5;
   opacity: 0.8;
   width: 100%;
   height: 100vh;
 }
 
+h2.hello {
+  font-size: 8em;
+  line-height: 0;
+  margin: 175px 0 60px;
+  text-align: center;
+  text-shadow: 2px 4px 2px rgb(55, 29, 74);
+  animation-name: diagonal-slide;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
 .introBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  // margin-top: 50px;
   animation: slideIn 1s linear;
   z-index: 1;
 
@@ -32,17 +45,120 @@
     color: white;
   }
 
-  h2.hello {
-    font-size: 8em;
-    line-height: 0;
-    margin: 0 0 60px;
-    text-shadow: 2px 4px 2px rgb(55, 29, 74);
-  }
-
   p {
     text-align: center;
     margin: 0;
     color: white;
     font-size: 1.3em;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.star,
+.star2,
+.star3, {
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  right: 35%;
+  width: 24px;
+  height: 24px;
+  background: #e8b866;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  animation: glitter 4.5s linear 0s normal;
+  animation-iteration-count: 3;
+}
+
+.star2 {
+  bottom: 23%;
+  right: 13%;
+  animation-delay: 1s;
+}
+
+.star3 {
+  bottom: 30%;
+  right: 15%;
+  animation-delay: 500ms;
+}
+
+.star-top,
+.star-bottom {
+  position: relative;
+  display: block;
+}
+
+.star-top::before,
+.star-top::after,
+.star-bottom::before,
+.star-bottom::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: #833db5;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* CSS3 pseudo class for positioning curves */
+
+.star-top::before {
+  top: -12px;
+  left: -12px;
+}
+
+.star-top::after {
+  bottom: -12px;
+  left: 12px;
+}
+
+.star-bottom::before {
+  top: 12px;
+  left: -12px;
+}
+
+.star-bottom::after {
+  top: 12px;
+  left: 12px;
+}
+
+/* CSS3 keyframes for glittering effect */
+
+@keyframes glitter {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
