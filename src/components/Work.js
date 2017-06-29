@@ -16,6 +16,7 @@ class Work extends Component {
           </p>
         </div>
       </div>
+      <hr />
       <div className='workSample'>
         <div className='responsiveContainer'>
           <img src={DINE} alt='ingredereader' />
@@ -27,6 +28,7 @@ class Work extends Component {
           </p>
         </div>
       </div>
+      <hr />
       <div className='workSample'>
         <div className='responsiveContainer'>
           <img src={Octocat} alt='ingredereader' />

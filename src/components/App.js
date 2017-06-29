@@ -3,7 +3,6 @@ import { BrowserRouter as Router,
 Link,
 Switch,
 Route } from 'react-router-dom'
-import Gitcall from './Gitcall'
 import Nav from './Nav'
 import Footer from './Footer'
 import Intro from './Intro'

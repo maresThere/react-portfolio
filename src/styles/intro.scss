@@ -1,7 +1,7 @@
 .introContainer {
   display: flex;
   flex-direction: column;
-  background-color: #833db5;
+  // background-color: #833db5;
   opacity: 0.8;
   width: 100%;
   height: 100vh;
@@ -187,5 +187,13 @@ figure {
 @media screen and (max-width: 600px) {
   .starzContainer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2.hello {
+    font-size: 12em;
+    line-height: 0;
+    margin: 200px 0 100px;
   }
 }
