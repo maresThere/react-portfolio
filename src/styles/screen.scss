@@ -67,6 +67,41 @@ html {
   }
 }
 
+.workSample {
+  padding: 20px 0;
+}
+
+.responsiveContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sampleText {
+  max-width: 600px;
+}
+
+@media screen and (min-width: 900px) {
+  .responsiveContainer img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .workSample {
+    display: flex;
+  }
+
+  .sampleText {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .workSamples {
+    margin-top: 100px;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .smLinksB {
     flex-direction: row;

@@ -33,6 +33,9 @@ class Gitcall extends Component {
         <p>The Iron Yard taught me how to program with React components. Each assignment was an opportunity to improve css skills and organize code more efficiently.</p>
       </div>
       <ul className='myWork'>
+        <div className='ingredereader'>
+          <h3 className='xyz'>ingredereader</h3>
+        </div>
         <li className='work'>{links[0]}
         </li>
         <li className='work'>{links[1]}</li>

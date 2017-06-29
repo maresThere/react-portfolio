@@ -10,6 +10,7 @@ import Intro from './Intro'
 import About from './About'
 import Resume from './Resume'
 import Contact from './Contact'
+import Work from './Work'
 import Decor from './Decor'
 
 class App extends Component {
@@ -58,16 +59,17 @@ class App extends Component {
               return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
             }} />
             <Route path='/about' component={About} />
-            <Route path='/work' render={(props) => {
+            {/* <Route path='/work' render={(props) => {
               return <Gitcall {...props} work={this.state.work} />
-            }} />
+            }} /> */}
+            <Route path='/work' component={Work} />
             <Route path='/resume' component={Resume} />
             <Route path='/contact' component={Contact} />
           </Switch>
         </div>
         <Nav />
         <Footer />
-        {/* <Decor /> */}
+        <Decor />
       </div>
     </Router>
   }
