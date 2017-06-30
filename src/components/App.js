@@ -47,8 +47,6 @@ class App extends Component {
   render () {
     return <Router>
       <div className='App'>
-        {/* <div id='color_layer' />
-        <div className='bgImage' /> */}
         <div className='mainContainer'>
           <Route exact path='/' render={(props) => {
             return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />

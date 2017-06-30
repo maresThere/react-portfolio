@@ -23,7 +23,7 @@ h2.hello {
   flex-direction: column;
   align-items: center;
   // margin-top: 50px;
-  animation: slideIn 1s linear;
+  animation: $pageAnimation;
   z-index: 1;
 
   img {
@@ -33,9 +33,7 @@ h2.hello {
   }
 
   .introText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column;
   }
 
   h1 {

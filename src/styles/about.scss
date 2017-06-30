@@ -1,22 +1,18 @@
 .aboutMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-
-  animation: slideIn 1s linear;
-
+  @include flex-column;
   @include reset-list;
+
+  width: 100%;
+  animation: $pageAnimation;
 }
 
 .subAbout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column;
+
   background-color: rgba(55, 29, 74, 0.7);
   // margin: 30px 0;
-  box-shadow: 2px 4px 2px rgb(55, 29, 74);
-  animation: slideIn 1s linear;
+  box-shadow: $purpleboxShadow;
+  animation: $pageAnimation;
   height: 200px;
   width: 300px;
   transform: rotate(-3deg);
@@ -49,7 +45,6 @@
   margin: 2px;
 }
 
-
 .rotateR {
   transform: rotate(3deg);
 }
@@ -63,15 +58,15 @@
 }
 
 .border {
-  border: 3px dotted rgb(127, 236, 172);
+  border: $greenDotBorder;
   padding: 5px;
   // width: 50%
 }
 
 .mypics {
   align-self: center;
-  box-shadow: 2px 4px 2px rgb(55, 29, 74);
-  border: 3px dotted rgb(127, 236, 172);
+  box-shadow: $purpleboxShadow;
+  border: $greenDotBorder;
   width: 80%;
   z-index: 1;
   margin: 10px;
@@ -94,7 +89,7 @@
   .deviconContainer {
     width: 75px;
     height: 75px;
-    border: 3px dotted rgb(127, 236, 172);
+    border: $greenDotBorder;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -114,7 +109,7 @@
     @include reset-list;
 
     li {
-    margin: 20px;
+      margin: 20px;
     }
 
     .subAbout {
