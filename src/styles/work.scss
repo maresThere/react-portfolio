@@ -127,27 +127,3 @@
     opacity: 1;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .CSScontainer {
-    width: 600px;
-  }
-  .projects ul.myWork {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .WebWork {
-    margin-left: 10px;
-  }
-
-  .webContainer {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
