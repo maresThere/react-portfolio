@@ -11,11 +11,11 @@ class About extends Component {
           <img src={mebw2017} className='mypics' />
         </li>
         <li className='subAbout border expand1'>
-          <p><span className='bigger'>The Iron Yard</span> coding bootcamp is my latest educational endevour. I took the Front End Engineering course. Twelve intense weeks of learning the latest front end technologies. I reaffirmed my love for CSS and responsive design at The Iron Yard.</p>
+          <p><span className='bigger'>The Iron Yard</span> coding bootcamp is my latest educational endevour. I took the Front End Engineering course. Twelve intense weeks of learning the latest front end technologies. I reaffirmed my love for css and responsive design at The Iron Yard.</p>
         </li>
         <li className='subAbout rotateR expand2 border'>
           <div className='about2'>
-            <p><span className='bigger'>A few things about me;</span> I try to live life from a perspective of gratitude. When I am working, my goals are the goals of my employer. I want nothing more than to do a great job.</p>
+            <p><span className='bigger'>A few things about me;</span> Web Development is my 2nd career. I have a background in Property Management, where I became well versed in marketing and sales. Those skills come in handy with UI and UX.</p>
           </div>
         </li>
         <li>

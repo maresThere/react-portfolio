@@ -92,15 +92,32 @@ hr {
 .sampleText {
   max-width: 600px;
 
-  h2 {
+  .xyz {
+    display: flex;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid $golden;
     padding: 7px;
+    margin: 10px; 
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  a {
+    color: $golden;
+    align-self: center;
   }
 
   p {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 7px;
+    font-family: $heading-font-fam;
+    margin: 5px;
+    margin-left: 7px;
+    font-size: 1.5em;
+    text-align: left;
   }
 }
 
