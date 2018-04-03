@@ -7,31 +7,31 @@ class Resume extends Component {
       <div className='experience'>
         {/* <div className='pdflink'><a href='../images/resume.pdf'>pdf version</a></div> */}
         <h3 className='exp'><span className='resDecor'>&diams;</span> EXPERIENCE</h3>
+        <h4>Email Developer</h4>
+        <div className='placeDate'>
+          <span className='place'>TradeSmith</span><span className='date'>7/2017 - Present</span>
+        </div>
+        <ul className='bullets'>
+          <li>Design, develop &amp; execute responsive emails </li>
+          <li>Code, optimize and post editorials to WordPress blog</li>
+          <li>Design &amp; build <a href='http://lavish-fan.surge.sh/'>responsive landing pages</a></li>
+        </ul>
         <h4>Front End Engineering</h4>
         <div className='placeDate'>
           <span className='place'>The Iron Yard</span><span className='date'>3/2017 - 6/2017</span></div>
-        <h4>Graphic Designer & Marketing Associate</h4>
+        <h4>Graphic Designer</h4>
         <div className='placeDate'>
           <span className='place'>Vitamin Discount Center</span><span className='date'>12/2015 - 3/2017</span>
         </div>
-        <span className='asa'>As a Graphic Designer:</span>
         <ul className='bullets'>
           <li>Optimized images for web and print </li>
           <li>Layout magazine articles; typesetting & graphics</li>
           <li>Created products advertisements in ‘For Life. For Less’ magazine</li>
           <li>Created tri-fold brochures & direct mail pieces</li>
           <li>Created graphics for Vitamindiscountcenter.com/blog</li>
-          <li>Created graphics for Facebook.com/vitamindiscountcenter</li>
+          <li>Created social media graphics</li>
         </ul>
-        <span className='asa'>As a Marketing Associate:</span>
-        <ul className='bullets'>
-          <li>Updated taxonomy & categorized 5,300 products on retail web site </li>
-          <li>Created weekly marketing email </li>
-          <li>Reviewed sales reports in eCommerce tool to measure email impact</li>
-          <li>Created A+ content for Amazon.com</li>
-          <li>Focused on a consistent message & graphic story across all platforms</li>
-          <li>Contributed ideas to marketing planning meetings</li>
-        </ul>
+
         <h4>Graphic Designer & Web Developer</h4>
         <div className='placeDate'>
           <span className='place'>The Visual Spectrum</span><span className='date'>5/2015 - 12/2015</span>
