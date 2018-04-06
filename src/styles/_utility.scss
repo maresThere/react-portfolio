@@ -45,6 +45,16 @@ $pageAnimation: slideIn 1s linear;
   background: linear-gradient(45deg, rgba(127, 236, 172, 1) 0%, rgba(130, 84, 180, 1) 39%, rgba(131, 61, 181, 1) 45%);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes slideIn {
   0% { transform: translateY(400px); }
   60% { transform: translateY(-50px); }

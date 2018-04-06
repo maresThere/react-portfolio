@@ -1,7 +1,6 @@
 @import 'utility';
 @import 'resume';
 @import 'about';
-@import 'work';
 @import 'nav';
 @import 'intro';
 @import 'contact';
@@ -30,17 +29,19 @@ html {
   font-size: $base-text-size;
   color: $golden;
 
-  @include gradient;
-
+  // @include gradient;
 }
 
 body {
   margin: 0;
+  background-image: url('../images/officeBG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .App {
   @include flex-column;
-  @include gradient;
+  // @include gradient;
 }
 
 .mainContainer {
