@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import me22017 from '../images/me22017.jpg'
-import Starz from './Starz'
 
 class Contact extends Component {
   render () {
@@ -25,7 +24,6 @@ class Contact extends Component {
           <li><a href='https://twitter.com/mareKellyWebDev' target='_blank'><i className='fa fa-twitter-square fa-2x' aria-hidden='true' /></a></li>
         </ul>
       </div>
-      <Starz />
     </div>
   }
 }

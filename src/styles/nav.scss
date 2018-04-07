@@ -13,10 +13,11 @@
   position: fixed;
   top: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .navLinks {
-    background-color: rgba(55, 29, 74, 0.9);
-padding: 0.5em;
+    background-color: rgb(57,63,77);
+    padding: 0.5em;
     display: flex;
     align-self: center;
     justify-content: space-around;

@@ -3,16 +3,16 @@
   @include reset-list;
 
   width: 100%;
-  animation: $pageAnimation;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 .subAbout {
   @include flex-column;
 
-  background-color: rgba(55, 29, 74, 0.7);
-  // margin: 30px 0;
+  background-color: rgba(57, 63, 77, 0.9);
   box-shadow: $purpleboxShadow;
-  animation: $pageAnimation;
   height: 200px;
   width: 300px;
   transform: rotate(-3deg);

@@ -22,8 +22,9 @@ h2.hello {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: $pageAnimation;
-  z-index: 1;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 
   img {
     border-radius: 50%;

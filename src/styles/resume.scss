@@ -5,7 +5,9 @@
   justify-content: flex-start;
   margin-top: 150px;
   background-color: white;
-  animation: slideIn 1s linear;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 
   li,
   p,

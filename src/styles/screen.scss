@@ -37,11 +37,11 @@ body {
   background-image: url('../images/officeBG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .App {
   @include flex-column;
-  // @include gradient;
 }
 
 .mainContainer {
@@ -74,7 +74,7 @@ body {
 }
 
 .workSamples {
-  background-color: #833db5;
+  background-color: #666;
   padding: 50px;
   animation: $pageAnimation;
 }

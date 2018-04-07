@@ -1,6 +1,9 @@
 .contactWrapper {
   display: flex;
   flex-direction: row;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 .me22017 {
@@ -21,7 +24,7 @@
   padding: 10px;
   // margin: 10px;
   text-shadow: 2px 4px 2px rgb(55, 29, 74);
-  animation: slideIn 1s linear;
+  // animation: slideIn 1s linear;
 
   h2 {
     margin: 0;
