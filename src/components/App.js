@@ -11,20 +11,16 @@ import Resume from './Resume'
 import Contact from './Contact'
 import Work from './Work'
 import Decor from './Decor'
+import workSamples from '../workSamples'
 
 class App extends Component {
   state = {
-    profile: [],
     name: [],
-    location: [],
-    bio: [],
-    work: [],
-    repoName: []
+    bio: []
   }
 
   componentDidMount () {
     const user = 'https://api.github.com/users/maresThere'
-    const assignments = 'https://api.github.com/users/maresThere/starred'
     window.fetch(user)
       .then(r => r.json())
       .then(data => {
@@ -35,13 +31,6 @@ class App extends Component {
         })
         console.log(data)
       })
-    window.fetch(assignments)
-        .then(r => r.json())
-        .then(data => {
-          this.setState({
-            work: data
-          })
-        })
   }
 
   render () {
@@ -56,10 +45,7 @@ class App extends Component {
               return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
             }} />
             <Route path='/about' component={About} />
-            {/* <Route path='/work' render={(props) => {
-              return <Gitcall {...props} work={this.state.work} />
-            }} /> */}
-            <Route path='/work' component={Work} />
+            <Route path='/work' render={props => <Work loadWorkSamples={this.loadWorkSamples} details={this.state.work} />} />
             <Route path='/resume' component={Resume} />
             <Route path='/contact' component={Contact} />
           </Switch>

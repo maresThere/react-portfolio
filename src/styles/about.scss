@@ -13,9 +13,9 @@
 
   background-color: rgba(57, 63, 77, 0.9);
   box-shadow: $purpleboxShadow;
-  height: 200px;
+  height: 125px;
   width: 300px;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
   padding: 5px;
   z-index: 0;
 
@@ -27,7 +27,7 @@
   p {
     margin: 5px;
     margin-left: 7px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
     font-family: $heading-font-fam;
   }
@@ -46,7 +46,7 @@
 }
 
 .rotateR {
-  transform: rotate(3deg);
+  transform: rotate(2deg);
 }
 
 .about2 {
@@ -57,11 +57,11 @@
   margin-bottom: 30px;
 }
 
-.border {
-  border: $greenDotBorder;
-  padding: 5px;
-  // width: 50%
-}
+// .border {
+//   border: $greenDotBorder;
+//   padding: 5px;
+//   // width: 50%
+// }
 
 .mypics {
   align-self: center;
@@ -97,7 +97,7 @@
   }
 
   .devicon {
-    font-size: 2em;
+    font-size: 1em;
     margin: 2px;
   }
 

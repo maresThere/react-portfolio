@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import theIronYardLogo from '../images/theIronYardLogo.png'
+// import theIronYardLogo from '../images/theIronYardLogo.png'
 import me2017 from '../images/me2017.jpg'
 import mebw2017 from '../images/mebw2017.jpg'
 
