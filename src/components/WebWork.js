@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
-
-class WebWork extends React.Component {
+import DINE from '../images/DINE.jpg'
+class WebWork extends Component {
   render () {
-    return (
-      <div>
-        <li>
-          hhhhh
+    return (<li className='item-container'>
 
-        </li>
+      <div className='item-details'>
+        <img src={DINE} />
+        <h3>Title</h3>
+        <h4>url, github</h4>
 
+        <div className='item-desc'>
+          <p>Dine is a component based restaurant menu. Graphcool API was used to create menu categories, food items and prices.</p>
+        </div>
       </div>
+      {/* <h2>{this.props.details.name}</h2>
+      <p>{this.props.details.desc} </p>
+      <a>href='{this.props.details.link}' </a>
+      <img src={this.props.details.image} /> */}
+    </li>
     )
   }
 }

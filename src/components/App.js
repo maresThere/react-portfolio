@@ -11,7 +11,6 @@ import Resume from './Resume'
 import Contact from './Contact'
 import Work from './Work'
 import Decor from './Decor'
-import workSamples from '../workSamples'
 
 class App extends Component {
   state = {
@@ -45,7 +44,7 @@ class App extends Component {
               return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
             }} />
             <Route path='/about' component={About} />
-            <Route path='/work' render={props => <Work loadWorkSamples={this.loadWorkSamples} details={this.state.work} />} />
+            <Route path='/work' component={Work} />
             <Route path='/resume' component={Resume} />
             <Route path='/contact' component={Contact} />
           </Switch>

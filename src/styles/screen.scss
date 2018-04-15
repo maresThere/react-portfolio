@@ -50,6 +50,52 @@ body {
   justify-content: center;
 }
 
+.dark-gray-bg {
+  background-color: #1d1e22;
+  width: 100vw;
+}
+
+.light-gray-bg {
+  background-color: #393f4d;
+  width: 80vw;
+  padding: 20px;
+}
+
+.item-container {
+  width: 300px;
+  color: #393f4d;
+  margin: 25px;
+
+  .item-details {
+    background-color: #feda6a;
+    width: 100%;
+    // padding: 10px;
+    margin: -5px;
+  }
+
+  h3,
+  h4 {
+    color: #393f4d;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .item-desc {
+    background-color: #1d1e22;
+    color: #d4d4dc;
+    width: 100%;
+    padding: 10px 0;
+
+    p {
+      margin: 10px;
+    }
+  }
+}
+
+
 .smLinksB {
   position: fixed;
   top: 100px;
@@ -73,83 +119,39 @@ body {
   }
 }
 
-.workSamples {
-  background-color: #666;
-  padding: 50px;
-  width: 100%;
-  height: 100vh;
-  animation: $pageAnimation;
-}
-
-.workSample {
-  padding: 20px 0;
-}
-
-.responsiveContainer img {
-  max-width: 100%;
-  height: auto;
-  border-bottom: 3px solid $golden;
-  box-shadow: $purpleboxShadow;
-}
-
 hr {
   border-width: 2px;
   border-style: inset;
   border-color: $golden;
 }
 
-.sampleText {
-  max-width: 600px;
-
-  .xyz {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid $golden;
-    padding: 7px;
-    margin: 10px;
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  a {
-    color: $golden;
-    align-self: center;
-  }
-
-  p {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 7px;
-    font-family: $heading-font-fam;
-    margin: 5px;
-    margin-left: 7px;
-    font-size: 1.5em;
-    text-align: left;
-  }
+.xyz {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid $golden;
+  padding: 7px;
+  margin: 10px;
 }
 
-@media screen and (min-width: 900px) {
-  .responsiveContainer img {
-    max-width: 90%;
-    height: auto;
-  }
-
-  .workSample {
-    display: flex;
-  }
-
-  .sampleText {
-    max-width: 400px;
-  }
+h2 {
+  margin: 0;
 }
 
-@media screen and (min-width: 750px) {
-  .workSamples {
-    margin-top: 100px;
-  }
+a {
+  color: $golden;
+  align-self: center;
 }
+
+// p {
+//   background-color: rgba(0, 0, 0, 0.5);
+//   padding: 7px;
+//   font-family: $heading-font-fam;
+//   margin: 5px;
+//   margin-left: 7px;
+//   font-size: 1.5em;
+//   text-align: left;
+// }
 
 
 @media screen and (max-width: 749px) {
