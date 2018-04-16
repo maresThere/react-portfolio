@@ -40,7 +40,11 @@ $pageAnimation: fadeIn 1s linear;
   }
 }
 
-
+p {
+  margin: 10px;
+  font-family: $heading-font-fam;
+  color: $golden;
+}
 
 @keyframes fadeIn {
   0% {

@@ -21,7 +21,7 @@ class Work extends Component {
         <ul className='light-gray-bg'>
           {Object.keys(portfolio).map(key => <WebWork key={key} details={this.state.work[key]} />)}
         </ul>
-        <button onClick={this.loadWorkSamples}>load work</button>
+        {/* <button onClick={this.loadWorkSamples}>load work</button> */}
       </div>
     )
   }

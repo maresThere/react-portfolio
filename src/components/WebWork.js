@@ -3,12 +3,10 @@ import DINE from '../images/DINE.jpg'
 class WebWork extends Component {
   render () {
     return (<li className='item-container'>
-
+      <img src={DINE} />
       <div className='item-details'>
-        <img src={DINE} />
         <h3>Title</h3>
         <h4>url, github</h4>
-
         <div className='item-desc'>
           <p>Dine is a component based restaurant menu. Graphcool API was used to create menu categories, food items and prices.</p>
         </div>
