@@ -1,88 +1,45 @@
-@media screen and (max-width: 768px) {
-  .navLinks {
-    display: none;
-  }
-
-  .decor {
-    display: none;
-  }
+ul.navLinks {
+  margin: 0;
+  background-color: rgb(57, 63, 77);
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  border-bottom: 1px solid darken($golden, 10%);
+  list-style: none;
+  z-index: 1;
 }
 
-.smLinksB {
-  flex-direction: row;
-  position: fixed;
-  top: 20px;
+li.navBtn {
+  font-size: 1.7em;
+  margin: 5px;
+  padding: 5px;
+  font-family: $heading-font-fam;
+  transition: 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  .navLinks {
-    background-color: rgb(57,63,77);
-    padding: 0.5em;
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    position: fixed;
-    width: 700px;
-    top: 0;
-    border-bottom: 1px solid darken($golden, 10%);
-    padding-left: 100%;
-    padding-right: 100%;
-    margin: 0 auto;
-    list-style: none;
-    z-index: 1;
+a:link {
+  color: $golden;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  font-weight: 100;
+}
 
-    li.navBtn {
-      flex: 0 1 auto;
-      height: 30px;
-      font-size: 1.7em;
-      margin: 5px;
-      padding: 5px;
-      font-family: $heading-font-fam;
-      text-align: center;
-      transition: 0.5s;
-      width: 100%;
-    }
+// a:visited {
+//   color: red;
+// }
 
-    .hov {
-      font-size: 0.7em;
-      color: transparent;
-    }
+.hov {
+  color: $golden;
+  transition: all 0.9s ease;
+}
 
-    a:link {
-      color: $golden;
-      text-decoration: none;
-      text-align: center;
-      width: 100px;
-      font-weight: 100;
-    }
+a:active {
+  color: white;
+}
 
-    a:visited {
-      color: $golden;
-    }
-
-    .navBtn:hover {
-      // transform: scale(1);
-
-      .hov {
-        color: $golden;
-        transition: all 0.9s ease;
-      }
-    }
-
-    a:active {
-      color: rgb(127,228,172);
-    }
-  }
-
-  .decor {
-    font-size: 2em;
-    color: $golden;
-    text-shadow: 1px 1px $golden;
-  }
-  .diamonds {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-bottom: 30px;
-  }
+.decor {
+  font-size: 2em;
+  color: $golden;
+  text-shadow: 1px 1px $golden;
 }

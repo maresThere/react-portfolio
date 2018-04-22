@@ -62,61 +62,48 @@ body {
 .light-gray-bg {
   align-self: center;
   background-color: #393f4d;
-  max-width: 350px;
   padding: 20px;
 }
 
 .item-container {
-  width: 300px;
+  display: grid;
+  grid-template-areas:
+    "img img title"
+    "img img desc";
   color: #393f4d;
   margin: 25px;
 
-  .item-details {
+  .item-img {
+    grid-area: img;
+  }
+
+  .item-title {
+    grid-area: title;
     background-color: #feda6a;
-    width: 100%;
     margin: -5px 0;
     padding: 10px 0;
+    display: grid;
+    align-items: center;
+    align-content: center;
   }
 
-  h3,
+  h3 {
+    color: #393f4d;
+    font-size: 4em;
+  }
+
   h4 {
     color: #393f4d;
-    font-size: 1.2em;
-  }
-
-  img {
-    width: 100%;
+    font-size: 2em;
   }
 
   .item-desc {
+    grid-area: desc;
     background-color: #1d1e22;
     color: #d4d4dc;
-    width: 100%;
     padding: 10px 0;
-  }
-}
-
-
-.smLinksB {
-  position: fixed;
-  top: 100px;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  padding: 10px;
-  text-shadow: 1px 2px 3px black;
-
-  @include reset-list;
-
-  margin: 10px;
-  justify-content: space-around;
-
-  a:link,
-  a:visited,
-  a:active,
-  a:hover,
-  a:visited {
-    color: $golden;
+    display: grid;
+    align-items: center;
   }
 }
 
@@ -142,20 +129,6 @@ h2 {
 a {
   color: $golden;
   align-self: center;
-}
-
-@media screen and (min-width: 600px) {
-  .item-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 250px 100px;
-  }
-
-  img {
-    grid-colum: 1 / span 6;
-    grid-row: 1;
-
-  }
 }
 
 

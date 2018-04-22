@@ -17,9 +17,6 @@ $pageAnimation: fadeIn 1s linear;
   justify-content: center;
 }
 
-* {
-  // border-radius: 3px;
-}
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {
   padding-left: 0;
