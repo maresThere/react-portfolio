@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router,
-Link,
 Switch,
 Route } from 'react-router-dom'
 import Nav from './Nav'
-import Footer from './Footer'
 import Intro from './Intro'
 import About from './About'
 import Resume from './Resume'
 import Contact from './Contact'
 import Work from './Work'
-import Decor from './Decor'
 
 class App extends Component {
   state = {
