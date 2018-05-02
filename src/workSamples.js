@@ -3,9 +3,9 @@ const portfolio = [
   {
     name: 'Ingredereader',
     image: '/images/wireframeIR.jpg',
-    desc: 'The Ingredereader was my final project at TIY. This is ultimately a mobile only application. Users with food allergies can choose their allergen and then scan a food product barcode. The app calls the Nutritionex Api and searches the ingredient label for the allergen.',
-    link: 'https://github.com/maresThere/ingredereader'
-
+    desc: 'The Ingredereader was my final project at TIY. This is a mobile app made with React. Users with food allergies can choose their allergen and then scan a food product barcode. The app calls an Api and searches the ingredient label for the allergen.',
+    git: 'https://github.com/maresThere/ingredereader',
+    link: ''
   },
 
   {
@@ -13,7 +13,8 @@ const portfolio = [
     image: '/images/DINE.jpg',
     desc:
       'Dine is a component based restaurant menu. Graphcool API was used to create menu categories, food items and prices.',
-    link: 3200
+    git: 'https://github.com/maresThere/DINE',
+    link: ''
   },
 
   {
@@ -21,7 +22,17 @@ const portfolio = [
     image: '/images/octocat.jpg',
     desc:
       'The Octocat project is a responsive reproduction of the Octodex collection page.',
-    link: 'https://github.com/maresThere/octodex'
+    git: 'https://github.com/maresThere/octodex',
+    link: ''
+  },
+
+  {
+    name: 'Mount Dora Area Chamber',
+    image: '/images/mtdora.jpg',
+    desc:
+      'loremipsum',
+    git: '',
+    link: 'https://mountdora.com/'
   },
 
   {
@@ -29,23 +40,17 @@ const portfolio = [
     image: '/images/tarpon.jpg',
     desc:
       'loremipsum',
+    git: '',
     link: 'http://tarponspringschamber.com/'
   },
 
   {
-    name: 'thomaspromise',
+    name: 'The Thomas Promise',
     image: '/images/thomaspromise.jpg',
     desc:
       'loremipsum',
+    git: '',
     link: 'http://www.thethomaspromise.org/'
-  },
-
-  {
-    name: 'mtdora',
-    image: '/images/mtdora.jpg',
-    desc:
-      'loremipsum',
-    link: 'https://mountdora.com/'
   }
 ]
 

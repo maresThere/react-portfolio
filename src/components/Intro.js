@@ -12,6 +12,12 @@ class Intro extends Component {
             <h1>{this.props.name}</h1>
             <p>{this.props.bio}</p>
           </div>
+          <div className='deviconContainer'>
+            <i className='devicon devicon-html5-plain' />
+            <i className='devicon devicon-css3-plain' />
+            <i className='devicon devicon-react-original' />
+            <i className='devicon devicon-javascript-plain' />
+          </div>
         </div>
       </div>
     )

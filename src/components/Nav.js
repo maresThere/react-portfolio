@@ -8,9 +8,6 @@ class Nav extends Component {
         <NavLink to='/Intro'>home</NavLink>
       </li>
       <li className='navBtn'>
-        <NavLink to='/about'>about</NavLink>
-      </li>
-      <li className='navBtn'>
         <NavLink to='/work'>work</NavLink>
       </li>
       <li className='navBtn'>
