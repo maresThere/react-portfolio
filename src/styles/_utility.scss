@@ -33,7 +33,7 @@ $pageAnimation: fadeIn 1s linear;
   body,
   #root,
   #root > div {
-    min-height: 100vh;
+    height: 100%;
   }
 }
 

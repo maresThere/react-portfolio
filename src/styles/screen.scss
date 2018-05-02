@@ -26,8 +26,7 @@ a:any-link {
 }
 
 html {
-  @include full-height;
-
+  height: 100%;
   font-family: $body-font-fam;
   font-size: $base-text-size;
   color: $golden;
@@ -36,7 +35,9 @@ html {
 body {
   margin: 0;
   background-image: url('../images/officeBG.jpg');
-  background-size: cover cover;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
