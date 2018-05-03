@@ -52,6 +52,15 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 700px) {
+  .Intro,
+  .contactWrapper {
+    position: fixed;
+    bottom: 0;
+
+  }
+}
+
 .dark-gray-bg {
   display: flex;
   flex: 1;

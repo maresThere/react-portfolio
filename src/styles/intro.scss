@@ -46,4 +46,16 @@ h2.hello {
     color: white;
     font-size: 1.3em;
   }
+
+  .deviconContainer {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  i.devicon {
+    font-size: 1.8em;
+   -moz-font-size: 1.8px;
+  }
 }
