@@ -5,8 +5,9 @@ class Intro extends Component {
   render () {
     return (
       <div className='introContainer'>
-        <h2 className='hello'>HELLO</h2>
+
         <div className='introBox'>
+          <h2 className='hello'>HELLO</h2>
           <img src={mareKelly} />
           <div className='introText'>
             <h1>{this.props.name}</h1>

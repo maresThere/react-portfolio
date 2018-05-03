@@ -17,6 +17,11 @@ li.navBtn {
   transition: 0.5s;
 }
 
+a {
+  color: $golden;
+  align-self: center;
+}
+
 a:link {
   color: $golden;
   text-decoration: none;
@@ -25,17 +30,13 @@ a:link {
   font-weight: 100;
 }
 
-// a:visited {
-//   color: red;
-// }
-
-.hov {
-  color: $golden;
+a:hover {
+  color: red;
   transition: all 0.9s ease;
 }
 
 a:active {
-  color: white;
+  color: red;
 }
 
 .decor {

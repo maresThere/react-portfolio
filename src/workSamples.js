@@ -3,16 +3,16 @@ const portfolio = [
   {
     name: 'Ingredereader',
     image: '/images/wireframeIR.jpg',
-    desc: 'The Ingredereader was my final project at TIY. This is a mobile app made with React. Users with food allergies can choose their allergen and then scan a food product barcode. The app calls an Api and searches the ingredient label for the allergen.',
+    desc: 'The Ingredereader was my final project at TIY. This is meant to be a mobile app although it is made with React. Users with food allergies can choose their allergen and then scan a food product barcode. The app calls an Api and searches the ingredient label for the allergen.',
     git: 'https://github.com/maresThere/ingredereader',
-    link: ''
+    link: 'http://ingredereader.mariannekelly.surge.sh/'
   },
 
   {
     name: 'DINE',
     image: '/images/DINE.jpg',
     desc:
-      'Dine is a component based restaurant menu. Graphcool API was used to create menu categories, food items and prices.',
+      'Dine React app using Graphcool API to call menu categories, food items and prices. This, along with all my school projects, is a work in progress as I continue to grow my skills',
     git: 'https://github.com/maresThere/DINE',
     link: ''
   },
@@ -21,25 +21,16 @@ const portfolio = [
     name: 'Octocats',
     image: '/images/octocat.jpg',
     desc:
-      'The Octocat project is a responsive reproduction of the Octodex collection page.',
+      'The Octocat project was a lesson in responsive design and Flexbox. I pulled images from the original Octodex site and built a new responive page',
     git: 'https://github.com/maresThere/octodex',
-    link: ''
-  },
-
-  {
-    name: 'Mount Dora Area Chamber',
-    image: '/images/mtdora.jpg',
-    desc:
-      'loremipsum',
-    git: '',
-    link: 'https://mountdora.com/'
+    link: 'http://octodex.mariannekelly.surge.sh/'
   },
 
   {
     name: 'Tarpon Springs Chamber',
     image: '/images/tarpon.jpg',
     desc:
-      'loremipsum',
+      'I built this site using bootstrap, jquery and some php. I pulled assets from the old site and updated the taxonomy',
     git: '',
     link: 'http://tarponspringschamber.com/'
   },
@@ -48,7 +39,7 @@ const portfolio = [
     name: 'The Thomas Promise',
     image: '/images/thomaspromise.jpg',
     desc:
-      'loremipsum',
+      'Another project built with bootstrap, jquery and php',
     git: '',
     link: 'http://www.thethomaspromise.org/'
   }
