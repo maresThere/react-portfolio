@@ -1,17 +1,16 @@
 .contactWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-iteration-count: 1;
   position: fixed;
-  bottom: 25%;
+  bottom: 15%;
 }
 
 .me22017 {
-  display: none;
-  width: 300px;
-  height: 450px;
+  width: 100%;
+  max-width: 268px;
   align-self: center;
 }
 
@@ -20,10 +19,7 @@
   flex-direction: column;
   width: 268px;
   align-self: center;
-  // background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  // margin: 10px;
-  text-shadow: 2px 4px 2px rgb(29, 30, 34);
+  background-color: #393f4d;
 
   h2 {
     margin: 0;
@@ -36,7 +32,7 @@
 
   .card {
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid $golden;
     padding: 7px;
 
@@ -48,15 +44,11 @@
 
   .smLinks {
     display: flex;
-    // background-color: rgba(0, 0, 0, 0.5);
-    // border-bottom: 1px solid $golden;
     padding: 5px;
 
     @include reset-list;
 
-    // margin: 10px;
     justify-content: space-around;
-
 
     a:link,
     a:visited,
@@ -69,11 +61,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contactWrapper {
+    flex-direction: row;
+  }
+
   .me22017 {
-    display: flex;
-    width: 300px;
-    height: 450px;
-    align-self: center;
+    max-width: 200px;
     box-shadow: 2px 4px 4px rgb(29, 30, 34);
+  }
+
+  .contact {
+    height: 200px;
   }
 }

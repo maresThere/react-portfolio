@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import me22017 from '../images/me22017.jpg'
+import hector from '../images/hector.jpg'
 
 class Contact extends Component {
   render () {
     return <div className='contactWrapper'>
-      <img src={me22017} className='me22017' />
+      <img src={hector} className='me22017' />
       <div className='contact'>
         <div className='wrapper'>
           <h2 className='cardName'>&diams; Marianne Kelly</h2>

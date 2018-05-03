@@ -53,11 +53,9 @@ body {
 }
 
 @media (min-width: 700px) {
-  .Intro,
-  .contactWrapper {
+  .Intro {
     position: fixed;
     bottom: 0;
-
   }
 }
 
