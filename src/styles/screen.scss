@@ -69,6 +69,7 @@ body {
     "img desc desc";
   margin: 25px;
   box-shadow: 10px 10px 10px 3px #333;
+  max-width: 800px;
 }
 
 .item-img {
@@ -82,6 +83,7 @@ body {
 .item-title {
   grid-area: title;
   background-color: #feda6a;
+  height: 30px;
   padding: 10px 0;
   display: grid;
   grid-template-columns: 1fr auto;
