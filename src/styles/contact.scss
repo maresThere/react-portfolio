@@ -1,11 +1,10 @@
 .contactWrapper {
   display: flex;
   flex-direction: column;
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
   position: fixed;
   bottom: 15%;
+
+  @include animation;
 }
 
 .me22017 {

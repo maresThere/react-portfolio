@@ -3,6 +3,7 @@ ul.navLinks {
   background-color: rgb(57, 63, 77);
   padding: 0.5em;
   display: grid;
+  // justify-content: space-around;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   border-bottom: 1px solid darken($golden, 10%);
   list-style: none;
@@ -14,12 +15,12 @@ li.navBtn {
   margin: 5px;
   padding: 5px;
   font-family: $heading-font-fam;
+  text-align: center;
   transition: 0.5s;
 }
 
 a {
   color: $golden;
-  align-self: center;
 }
 
 a:link {

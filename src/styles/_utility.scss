@@ -15,6 +15,12 @@ $pageAnimation: fadeIn 1s linear;
   justify-content: center;
 }
 
+@mixin animation {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {
   padding-left: 0;

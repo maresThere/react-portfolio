@@ -1,8 +1,9 @@
 .introContainer {
   display: grid;
-  grid-auto-rows: 1fr 2fr 1fr;
-  width: 100%;
-  height: 100vh;
+  grid-template-areas:
+    "space1 space1 space1"
+    "space intro space"
+    "space space space";
 }
 
 h2.hello {
@@ -10,19 +11,17 @@ h2.hello {
   line-height: 2em;
   text-align: center;
   text-shadow: 2px 4px 2px rgb(29, 30, 34);
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+
+  @include animation;
 }
 
 .introBox {
+  grid-area: intro;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  grid-row: 2;
+
+  @include animation;
 
   img {
     border-radius: 50%;

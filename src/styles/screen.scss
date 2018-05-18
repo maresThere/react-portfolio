@@ -70,6 +70,8 @@ body {
   margin: 25px;
   box-shadow: 10px 10px 10px 3px #333;
   max-width: 800px;
+
+  @include animation;
 }
 
 .item-img {

@@ -5,15 +5,14 @@
   justify-content: flex-start;
   margin: 30px;
   background-color: white;
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+
+  @include animation;
 
   a {
     color: rgb(127, 236, 172);
     font-style: italic;
-
   }
+
   li,
   p,
   span {
