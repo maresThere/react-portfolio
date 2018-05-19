@@ -54,13 +54,15 @@ body {
   justify-content: center;
   background-color: #1d1e22;
   width: 100vw;
+  background-image: url('../images/footer_lodyas.png');
+  background-repeat: repeat;
 }
 
-.light-gray-bg {
-  align-self: center;
-  background-color: #393f4d;
-  padding: 50px;
-}
+// .light-gray-bg {
+//   align-self: center;
+//   background-color: #393f4d;
+//   padding: 50px;
+// }
 
 .item-container {
   display: grid;

@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import hector from '../images/hector.jpg'
+import mabel from '../images/mabel.jpg'
+import river from '../images/river.jpg'
+import pumpkin from '../images/pumpkin.jpg'
 
 class Contact extends Component {
   render () {
+    const imageArray = [ hector, mabel, river, pumpkin ]
+    const randomImage = Math.floor(Math.random() * imageArray.length)
+
     return <div className='contactWrapper'>
-      <img src={hector} className='me22017' />
+      <img src={imageArray[randomImage]} className='me22017' />
       <div className='contact'>
         <div className='wrapper'>
           <h2 className='cardName'>&diams; Marianne Kelly</h2>
