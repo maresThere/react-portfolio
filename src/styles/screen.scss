@@ -64,6 +64,8 @@ body {
 //   padding: 50px;
 // }
 
+//work page
+
 .item-container {
   display: grid;
   grid-template-areas:
@@ -107,6 +109,26 @@ body {
   a {
     text-align: left;
   }
+}
+
+a.blank {
+  display: none;
+}
+
+a.globe,
+a.git {
+  color: #393f4d;
+  font-size: 30px;
+}
+
+a.git::before {
+  font-family: 'FontAwesome';
+  content: "\f092";
+}
+
+a.globe::before {
+  font-family: 'FontAwesome';
+  content: "\f0ac";
 }
 
 h3 {

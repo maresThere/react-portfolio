@@ -30,7 +30,7 @@ const portfolio = [
     name: 'Tarpon Springs Chamber',
     image: '/images/tarpon.jpg',
     desc:
-      'I built this site using bootstrap, jquery and some php. I pulled assets from the old site and updated the taxonomy',
+      'I built this responsive site using bootstrap, jquery and some php. I worked on several Chamber sites where my main focus was creating pages for different types of community and business listings. See resume for more examples',
     git: '',
     link: 'http://tarponspringschamber.com/'
   },

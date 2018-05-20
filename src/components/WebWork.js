@@ -12,9 +12,8 @@ class WebWork extends Component {
         <h3>{name}</h3>
         <div className='item-icons'>
 
-          <a href={git}>
-            <i className='fa fa-github-square fa-2x' aria-hidden='true' /> </a>
-          <a href={link}><i className='fa fa-globe fa-2x' aria-hidden='true' /> </a>
+          <a href={git} className={git === '' ? 'blank' : 'git'} />
+          <a href={link} className={link === '' ? 'blank' : 'globe'} />
         </div>
 
       </div>
