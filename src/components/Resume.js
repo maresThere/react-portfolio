@@ -1,51 +1,15 @@
 import React, { Component } from 'react'
-// import ReactPDF from 'react-pdf';
+import ResumeJobs from './ResumeJobs'
+import roles from '../jobs'
 
 class Resume extends Component {
   render () {
     return <div className='resume'>
+      <h3 className='exp'><span className='resDecor'>&diams;</span> EXPERIENCE</h3>
       <div className='experience'>
-        {/* <div className='pdflink'><a href='../images/resume.pdf'>pdf version</a></div> */}
-        <h3 className='exp'><span className='resDecor'>&diams;</span> EXPERIENCE</h3>
-        <h4>Email Developer</h4>
-        <div className='placeDate'>
-          <span className='place'>TradeSmith</span><span className='date'>7/2017 - Present</span>
-        </div>
-        <ul className='bullets'>
-          <li>Design, develop &amp; execute responsive emails </li>
-          <li>Code, optimize and post editorials to WordPress blog</li>
-          <li>Design &amp; build <a href='http://lavish-fan.surge.sh/'>responsive landing pages</a></li>
-        </ul>
-        <h4>Front End Engineering</h4>
-        <div className='placeDate'>
-          <span className='place'>The Iron Yard</span><span className='date'>3/2017 - 6/2017</span></div>
-        <h4>Graphic Designer</h4>
-        <div className='placeDate'>
-          <span className='place'>Vitamin Discount Center</span><span className='date'>12/2015 - 3/2017</span>
-        </div>
-        <ul className='bullets'>
-          <li>Optimized images for web and print </li>
-          <li>Layout magazine articles; typesetting & graphics</li>
-          <li>Created products advertisements in ‘For Life. For Less’ magazine</li>
-          <li>Created tri-fold brochures & direct mail pieces</li>
-          <li>Created graphics for Vitamindiscountcenter.com/blog</li>
-          <li>Created social media graphics</li>
-        </ul>
-
-        <h4>Graphic Designer & Web Developer</h4>
-        <div className='placeDate'>
-          <span className='place'>The Visual Spectrum</span><span className='date'>5/2015 - 12/2015</span>
-        </div>
-        <ul className='bullets'>
-          <li>Maintained websites using Bootstrap, HTML5 CSS, JQuery</li>
-          <li>Updated web pages for sites including West Pasco Chamber of Commerce &  Zephyrhills Chamber of Commerce</li>
-          <li>Designed & developed tarponspringschamber.com</li>
-          <li>Assistant designer & developer of Clearwater-vacation.com,  Mount Dora Chamber of Commerce, thethomaspromise.org & theconcourse.org
-</li>
-          <li>Used Photoshop and Illustrator to create & modify web graphics</li>
-          <li>Used geo-location tags, schema.org, registered sites with Google & Bing</li>
-        </ul>
+        {roles.map(item => <ResumeJobs key={item.title} details={item} />)}
       </div>
+
       <div className='skillsEducation'>
         <div className='skillset'>
           <h3 className='sedu'><span className='resDecor'>&diams;</span> SKILLS</h3>
