@@ -8,7 +8,7 @@ const roles = [
     bullets:
     [ 'Design, develop & execute responsive emails',
       'Code, optimize and post editorials to WordPress blog',
-      'Design &amp; build responsive landing pages']
+      'Design & build responsive landing pages']
   },
 
   {
