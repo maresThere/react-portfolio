@@ -4,7 +4,7 @@ const currentWork = [
     name: 'Webinar Sales Pages',
     image: '/images/webinar.jpg',
     desc:
-      '',
+      'An Iframe was used to connect a video to the page. I used javascript for the countdown clock',
     git: 'https://github.com/maresThere/cyptoWebinar',
     link: 'http://lavish-fan.surge.sh/'
   },
@@ -21,7 +21,7 @@ const currentWork = [
   {
     name: 'Opt-in pages',
     image: '/images/ideas-optin.jpg',
-    desc: '',
+    desc: 'Opt-in pages are made in SalesForce Marketing Cloud. Bootstrap form is connected to a data extension with PHP',
     git: '',
     link: 'http://pages.exct.tradesmith.com/page.aspx?QS=5c591a8916642e73c78705da9cf64a4f384b223ca763a459e2c1464239253855'
 
