@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router,
-Switch,
-Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Nav from './Nav'
 import Intro from './Intro'
 import Resume from './Resume'

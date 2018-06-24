@@ -11,11 +11,9 @@ class WebWork extends Component {
       <div className='item-title'>
         <h3>{name}</h3>
         <div className='item-icons'>
-
           <a href={git} className={git === '' ? 'blank' : 'git'} />
           <a href={link} className={link === '' ? 'blank' : 'globe'} />
         </div>
-
       </div>
       <div className='item-desc'>
         <p>{desc} </p>

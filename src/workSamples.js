@@ -1,11 +1,11 @@
 const portfolio = [
 
   {
-    name: 'Ingredereader',
-    image: '/images/wireframeIR.jpg',
-    desc: 'The Ingredereader was my final project at TIY. This is meant to be a mobile app although it is made with React. Users with food allergies can choose their allergen and then scan a food product barcode. The app calls an Api and searches the ingredient label for the allergen.',
-    git: 'https://github.com/maresThere/ingredereader',
-    link: 'http://ingredereader.mariannekelly.surge.sh/'
+    name: 'Portfolio',
+    image: '/images/portfolio.jpg',
+    desc: 'Portfolio is made with React app from npm. Most of the content is mapped in from data files. images on the contact page  change on reload  with Javascript.',
+    git: 'https://github.com/maresThere/react-portfolio',
+    link: 'http://mariannekelly.com/'
   },
 
   {
@@ -14,7 +14,7 @@ const portfolio = [
     desc:
       'Dine React app using Graphcool API to call menu categories, food items and prices. This, along with all my school projects, is a work in progress as I continue to grow my skills',
     git: 'https://github.com/maresThere/DINE',
-    link: ''
+    link: 'http://menu-project.mariannekelly.surge.sh/'
   },
 
   {
@@ -33,15 +33,6 @@ const portfolio = [
       'I built this responsive site using bootstrap, jquery and some php. I worked on several Chamber sites where my main focus was creating pages for different types of community and business listings. See resume for more examples',
     git: '',
     link: 'http://tarponspringschamber.com/'
-  },
-
-  {
-    name: 'The Thomas Promise',
-    image: '/images/thomaspromise.jpg',
-    desc:
-      'Another project built with bootstrap, jquery and php',
-    git: '',
-    link: 'http://www.thethomaspromise.org/'
   }
 ]
 
