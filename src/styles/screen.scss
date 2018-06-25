@@ -69,7 +69,7 @@ body {
   }
 
   li {
-    list-style-type: none;
+    list-style-type: none !important;
   }
 }
 
@@ -160,12 +160,6 @@ h3 {
   }
 }
 
-hr {
-  border-width: 2px;
-  border-style: inset;
-  border-color: $golden;
-}
-
 @media (max-width: 700px) {
   .light-gray-bg {
     padding: 10px;
@@ -180,5 +174,9 @@ hr {
 
   .item-img img {
     max-width: 100%;
+  }
+
+  .item-desc p {
+    max-width: 600px;
   }
 }
