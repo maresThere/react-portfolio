@@ -60,12 +60,16 @@ body {
 
 .light-gray-bg {
   align-self: center;
-  background-color: #393f4d;
+  background-color: #383838;
   padding: 50px;
 
   p {
     max-width: 600px;
     color: white;
+  }
+
+  li {
+    list-style-type: none;
   }
 }
 

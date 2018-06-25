@@ -9,7 +9,7 @@ class Work extends Component {
       <div className='dark-gray-bg'>
         <ul className='light-gray-bg'>
           <h2>Latest Professional Work</h2>
-          <p>Production work in the Marketing department mainly consists of creating single landing pages. styling and javascript are kept on the index page and the bootstrap cdn is linked for responsiveness.</p>
+          <p>Production work in the Marketing department mainly consists of creating single landing pages. Styling and javascript are kept on the index page and the bootstrap cdn is linked to code responsively.</p>
           {currentWork.map(item => <WebWork key={item.name} details={item} />)}
         </ul>
         <ul className='light-gray-bg'>
