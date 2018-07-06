@@ -18,7 +18,7 @@ const roles = [
     bullets:
     [ 'Learned component based development with react.js',
       'Improved HTML and CSS skills',
-      'developed research tools & methods to solve problems']
+      'Developed research tools & methods to solve problems']
   },
 
   {
