@@ -6,7 +6,7 @@ class WebWork extends Component {
 
     return (<li className='item-container'>
       <div className='item-img'>
-        <img src={image} />
+        <img src={image} alt={name} />
       </div>
       <div className='item-title'>
         <h3>{name}</h3>

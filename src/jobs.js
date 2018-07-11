@@ -40,6 +40,7 @@ const roles = [
       'Updated web pages for sites including West Pasco Chamber of Commerce & Zephyrhills Chamber of Commerce',
       'Designed & developed tarponspringschamber.com', 'Assistant developer of Clearwater-vacation.com, Mount Dora Chamber of Commerce, thethomaspromise.org & theconcourse.org', 'Used Photoshop and Illustrator to create & modify web graphics', 'Used geo-location tags, schema.org, registered sites with Google & Bing']
   }
+
 ]
 
 export default roles

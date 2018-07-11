@@ -3,7 +3,7 @@ const portfolio = [
   {
     name: 'Portfolio',
     image: '/images/portfolio.jpg',
-    desc: 'Portfolio is made with React app from npm. Most of the content is mapped in from data files. images on the contact page  change on reload  with Javascript.',
+    desc: 'Portfolio is made with React app from npm. This project is hand coded with no templates or Bootstrap. Most of the content is mapped in from data files. images on the contact page  change on reload  with Javascript.',
     git: 'https://github.com/maresThere/react-portfolio',
     link: 'http://mariannekelly.com/'
   },

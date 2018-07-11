@@ -13,7 +13,7 @@ const currentWork = [
     name: 'Landing Pages',
     image: '/images/exp-offer.jpg',
     desc:
-      'Developed a generic "expired offer" landing page to use in Salesforce CRM. ',
+      'Developed a responsive generic "expired offer" landing page with Bootstrap to use in Salesforce CRM. ',
     git: '',
     link: 'http://picayune-arm.surge.sh'
   },
