@@ -76,6 +76,26 @@ body {
 
 //work page
 
+.top-title {
+  margin: 30px;
+}
+
+.print-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.print-img {
+  background-color: #393f4d;
+  margin: 25px;
+  box-shadow: 3px 3px 3px 3px #333;
+  max-width: 800px;
+
+  @include animation;
+}
+
 .item-container {
   display: grid;
   grid-template-areas:
