@@ -6,7 +6,6 @@ class PrintWork extends Component {
 
     return (<div className='print-container'>
       <div className='print-img'>
-
         <img src={image} alt={name} />
       </div>
     </div>
