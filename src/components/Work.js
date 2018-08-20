@@ -23,7 +23,7 @@ class Work extends Component {
           <p className='bigger-font'>My work in the Marketing department includes coding & sending HTML emails, designing digital & print PDF files, editing copy & creating landing pages. </p>
           <p className='bigger-font'>
           Above are conference flyers I created with InDesign for 2 financial management software products. </p>
-          <p className='bigger-font'> Below are pages I made with Bootstrap to keep it responsive. Each new page I get to design and develop is an opportunity to do better than the last one. </p>
+          <p className='bigger-font'> Below are pages I made with HTML, CSS and Bootstrap . Each new page I get to design and develop is an opportunity to do better than the last one. </p>
           {currentWork.map(item => <WebWork key={item.name} details={item} />)}
         </ul>
         <ul className='light-gray-bg'>
