@@ -20,7 +20,10 @@ class Work extends Component {
 
         <ul className='light-gray-bg'>
           <h2>Latest Professional Work</h2>
-          <p>Production work in the Marketing department mainly consists of creating single landing pages. Styling and javascript are kept on the index page and the bootstrap cdn is linked to code responsively.</p>
+          <p className='bigger-font'>My work in the Marketing department includes coding & sending HTML emails, designing digital & print PDF files, editing copy & creating landing pages. </p>
+          <p className='bigger-font'>
+          Above are conference flyers I created with InDesign for 2 financial management software products. </p>
+          <p className='bigger-font'> Below are pages I made with Bootstrap to keep it responsive. Each new page I get to design and develop is an opportunity to do better than the last one. </p>
           {currentWork.map(item => <WebWork key={item.name} details={item} />)}
         </ul>
         <ul className='light-gray-bg'>

@@ -110,6 +110,11 @@ body {
   @include animation;
 }
 
+.bigger-font {
+  font-size: 19px;
+  line-height: 20px;
+}
+
 .item-img {
   grid-area: img;
 }

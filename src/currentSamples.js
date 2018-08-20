@@ -4,7 +4,7 @@ const currentWork = [
     name: 'Webinar Sales Pages',
     image: '/images/webinar.jpg',
     desc:
-      'An Iframe was used to connect a video to the page. I used javascript for the countdown clock',
+      'I chose to use gold to match the logo & black to give a "cutting edge" feeling matching the mood of the subject. Still excited about the font pairing',
     git: 'https://github.com/maresThere/cyptoWebinar',
     link: 'http://lavish-fan.surge.sh/'
   },
@@ -13,7 +13,7 @@ const currentWork = [
     name: 'Landing Pages',
     image: '/images/exp-offer.jpg',
     desc:
-      'Developed a responsive generic "expired offer" landing page with Bootstrap to use in Salesforce CRM. ',
+      'Had fun with this expired offer page. Working on coming up with designs to display all product logos together.',
     git: '',
     link: 'http://picayune-arm.surge.sh'
   },
