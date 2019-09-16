@@ -1,10 +1,60 @@
 @import 'utility';
-@import 'resume';
-@import 'nav';
-@import 'intro';
-@import 'contact';
+@import 'toggleButton', 'resume', 'nav';
+@import '../components/menu/menu';
+@import '../components/intro/intro';
+@import '../components/about/about';
+@import '../components/print/print.scss';
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600');
+@import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
+
+
+html {
+  height: 100vh;
+  font-family: $body-font-fam;
+  font-size: $base-text-size;
+  color: $golden;
+  background-color: #1d1e22;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.App {
+  @include flex-column;
+  position: relative;
+  min-height: 100%;
+}
+
+.dark-gray-bg {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/footer_lodyas.png');
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+h2.top-title {
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 3em;
+  font-family: 'Rochester', cursive;
+}
+
+.grid-container {
+  display: grid;
+  padding: 1em;
+  justify-content: center;
+  height: 100%;
+  grid-gap: 0.5em;
+  margin: 0 auto;
+  width: 90%;
+  background: #bd8c7d;
+}
 
 h1,
 h2,
@@ -12,224 +62,56 @@ h3,
 h4,
 h5 {
   font-family: $heading-font-fam;
-  color: $golden;
-  z-index: 99;
-  margin: 0 10px;
 }
 
 a:any-link {
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-  font-family: $body-font-fam;
-  font-size: $base-text-size;
-  color: $golden;
-}
-
-body {
-  margin: 0;
-  background-image: url('../images/officeBG.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.App {
-  @include flex-column;
-}
-
-.mainContainer {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-.dark-gray-bg {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #1d1e22;
-  background-image: url('../images/footer_lodyas.png');
-  background-repeat: repeat;
-}
-
-.light-gray-bg {
-  align-self: center;
-  background-color: #383838;
-  padding: 50px;
-  margin-top: 30px;
-
-  p {
-    max-width: 600px;
-    color: white;
-    line-height: 1.3em;
+@media screen and (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    padding: 1em;
+    justify-content: center;
+    height: 100%;
+    grid-gap: 0.5em;
+    margin: 0 auto;
+    width: 90%;
+    background: #bd8c7d;
   }
 
-  .bigger-font {
-    max-width: 800px;
-    font-size: 19px;
-    // line-height: 1.1em;
-    margin: 25px;
-  }
-
-  li {
-    list-style-type: none !important;
+  .dark-gray-bg {
+    margin-top: 50px;
   }
 }
 
-//work page
-
-.top-title {
-  text-align: left;
-}
-
-.print-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.print-img {
-  background-color: #393f4d;
-  margin: 25px;
-  box-shadow: 3px 3px 3px 3px #333;
-  max-width: 800px;
-
-  @include animation;
-}
-
-.item-container {
-  display: grid;
-  grid-template-areas:
-    "img title title"
-    "img desc desc";
-  background-color: #393f4d;
-  margin: 25px;
-  box-shadow: 10px 10px 10px 3px #333;
-  max-width: 800px;
-
-  @include animation;
-}
-
-.bigger-font {
-  font-size: 19px;
-  line-height: 20px;
-  margin: 25px;
-}
-
-.item-img {
-  grid-area: img;
-}
-
-.item-img img {
-  max-width: 400px;
-  width: 100%;
-}
-
-.item-title {
-  grid-area: title;
-  background-color: #feda6a;
-  height: 30px;
-  padding: 10px 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  align-content: center;
-}
-
-.item-title i {
-  color: #393f4d;
-}
-
-.print-item-icons {
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: $golden;
-  color: #393f4d;
-
-  a {
-    text-align: right;
-  }
-
-  span {
-    justify-self: center;
-    align-self: center;
-  }
-}
-
-.item-icons {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: 40px 40px;
-
-  a {
-    text-align: left;
-  }
-}
-
-a.blank {
-  display: none;
-}
-
-a.globe,
-a.git {
-  color: #393f4d;
-  font-size: 30px;
-}
-
-a.git::before {
-  font-family: 'FontAwesome';
-  content: "\f092";
-}
-
-a.globe::before {
-  font-family: 'FontAwesome';
-  content: "\f0ac";
-}
-
-h3 {
-  color: #393f4d;
-  font-size: 1.2em;
-}
-
-.item-desc {
-  display: grid;
-  grid-area: desc;
-  align-items: center;
-  background-color: #1d1e22;
-  color: #d4d4dc;
-  padding: 10px 0;
-
-  p {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 700px) {
-  .light-gray-bg {
-    padding: 10px;
-  }
-
-  .item-container {
-    grid-template-areas:
-      "img img"
-      "title title"
-      "desc desc";
-  }
-
-  .item-img img {
-    max-width: 100%;
-  }
-
-  .item-desc p {
-    max-width: 600px;
-  }
-}
+//not using this right now
+// .item-icons {
+//   margin: 10px;
+//   display: grid;
+//   grid-template-columns: 40px 40px;
+//
+//   a {
+//     text-align: left;
+//   }
+// }
+//
+// a.blank {
+//   display: none;
+// }
+//
+// a.globe,
+// a.git {
+//   color: #393f4d;
+//   font-size: 30px;
+// }
+//
+// a.git::before {
+//   font-family: 'FontAwesome';
+//   content: "\f092";
+// }
+//
+// a.globe::before {
+//   font-family: 'FontAwesome';
+//   content: "\f0ac";
+// }

@@ -1,0 +1,75 @@
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 3em;
+
+  img {
+    width: 100%;
+    align-self: flex-start;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: 3px solid goldenrod;
+    margin: 15px;
+  }
+}
+.intro-headline {
+  display: flex;
+  align-items: center;
+}
+
+h2.hello {
+  font-family: 'Rochester', cursive;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  // line-height: 2em;
+  text-align: left;
+  text-shadow: 2px 4px 2px rgb(29, 30, 34);
+  position: relative;
+  z-index: 0;
+}
+
+.introText > p {
+  margin-left: 0;
+}
+
+.introContact {
+  display: flex;
+}
+
+.introCard {
+  display: flex;
+  // width: 200px;
+  font-size: 1.2em;
+  margin-left: 0;
+}
+
+.introBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%;
+
+  h1 {
+    font-size: 1.5em;
+    border-bottom: 3px solid goldenrod;
+    padding-bottom: 10px;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .introContainer {
+    flex-direction: row;
+
+    img {
+      align-self: flex-end;
+    }
+  }
+}

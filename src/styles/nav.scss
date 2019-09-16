@@ -1,47 +1,78 @@
+
+nav {
+  background: $sexygrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  font-family: $heading-font-fam;
+  box-shadow: 2px 2px #353535;
+  transition: right  0.3s ease-in;
+  background-image: url('/images/footer_lodyas.png');
+}
+
+nav.show {
+  right: 0;
+}
+
 ul.navLinks {
-  margin: 0;
-  background-color: rgb(57, 63, 77);
-  padding: 0.5em;
-  display: grid;
-  // justify-content: space-around;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  border-bottom: 1px solid darken($golden, 10%);
-  list-style: none;
-  z-index: 1;
+  list-style-type: none;
 }
 
 li.navBtn {
-  font-size: 1.7em;
-  margin: 5px;
-  padding: 5px;
-  font-family: $heading-font-fam;
-  text-align: center;
+  padding: 5px 0;
   transition: 0.5s;
+
+  a {
+    font-weight: 100;
+    font-size: 30px;
+  }
 }
 
-a {
-  color: $golden;
+ul ul {
+  list-style-type: none;
 }
 
-a:link {
+a:link,
+a:visited,
+a:active {
   color: $golden;
-  text-decoration: none;
-  text-align: center;
-  width: 100px;
-  font-weight: 100;
 }
 
 a:hover {
-  color: red;
-  transition: all 0.9s ease;
+  filter: hue-rotate(180deg);
+  font-weight: 100;
+  transition: all 0.4s ease;
 }
 
-a:active {
-  color: red;
+.contact {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+
+    h2 {
+    font-family: 'Rochester', cursive;
+    text-align: left;
+    padding: 0;
+  }
 }
 
-.decor {
-  font-size: 2em;
-  color: $golden;
-  text-shadow: 1px 1px $golden;
+.card {
+  margin-top: 10px;
+  border-bottom: 1px solid $golden;
+  padding: 7px 0;
+  font-size: 1.2em;
+}
+
+.smLinks {
+  display: flex;
+  padding: 5px;
+
+  @include reset-list;
+
+  justify-content: space-around;
 }

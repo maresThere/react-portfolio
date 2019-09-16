@@ -1,49 +1,36 @@
 .resume {
-  max-width: 850px;
+  width: 100%;
+  margin-top: 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 10px;
-  background-color: white;
+  background-color: $silkymauve;
 
   @include animation;
 
-  a {
-    color: rgb(127, 236, 172);
-    font-style: italic;
+  .experience,
+  .skillsEducation {
+    width: 90%;
+    margin: 1em auto;
   }
 
-  li,
-  p,
-  span {
-    color: black;
+  li {
+    line-height: 1.5em;
   }
 
-  h2,
+  * {
+    color: $sexygrey;
+  }
+
   h3,
   h4,
   h5 {
-    color: black;
-    font-weight: 600;
+    color: #333;
     font-size: 1.2em;
   }
 
   h3 {
-    padding-top: 30px;
-  }
-
-  h3.exp {
-    width: 400px;
-    border-bottom: 1px solid $golden;
-  }
-
-  h3.sedu {
-    width: 250px;
-    border-bottom: 1px solid $golden;
-  }
-
-  h3.addExp {
-    width: 600px;
+    padding-bottom: .5em;
     border-bottom: 1px solid $golden;
   }
 
@@ -51,47 +38,26 @@
     margin: 5px 0;
   }
 
-  h5 {
-    margin: 5px 0;
-    font-style: italic;
-  }
-
   .resDecor {
     color: $golden;
+    margin-right: .5em;
   }
-
-  .asa {
-    font-family: $body-font-fam;
-    font-style: italic;
-    font-size: 0.9em;
-  }
-}
-
-.experience {
-  max-width: 450px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 ul.bullets {
   margin-top: 2px;
-  padding-left: 10px;
+  // padding-left: 10px;
   font-size: 0.9em;
 }
 
-.skillsEducation {
-  width: 300px;
-  margin-left: 20px;
+.skillset {
+  display: flex;
 }
 
 .skills {
   line-height: 1.4em;
-}
-
-.skillset {
-  width: 250px;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .placeDate {
@@ -100,55 +66,26 @@ ul.bullets {
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  // font-weight: 300;
 }
 
-.experience .placeDate {
-  width: 400px;
-}
-
-.skillsEducation .placeDate {
-  width: 275px;
-}
-
-.edu {
-  margin-bottom: 20px;
-}
-
-.otherExp {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.mgtJobs {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 481px) {
-  .diamonds,
-  ul.bullets,
-  .asa,
-  .otherExp {
-    display: none;
-  }
-
+@media screen and (min-width: 800px) {
   .resume {
-    // width: 350px;
-    margin: 0;
+    flex-direction: row;
+    margin-top: 50px;
+
+    .experience {
+      width: 55%;
+      margin: 2.5em auto;
+    }
+
+    .skillsEducation {
+      width: 30%;
+      margin: 2.5em auto;
+    }
   }
 
-  .experience h3.exp {
-    width: 300px;
-  }
-
-  .h3.exp,
-  .experience,
-  .experience .placeDate,
-  .addExp {
-    width: 310px;
+  .skillset {
+    flex-direction: column;
   }
 }

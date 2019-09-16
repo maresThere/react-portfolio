@@ -8,6 +8,11 @@ $base-font-weight: 400;
 $box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 $pageAnimation: fadeIn 1s linear;
 
+$silkymauve: #bd8c7d;
+$sexygrey: #353535;
+$goldenink: lighten($golden, 10%);
+
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -15,8 +20,8 @@ $pageAnimation: fadeIn 1s linear;
 }
 
 @mixin animation {
-  animation-name: fadeIn;
-  animation-duration: 3s;
+  animation-name: slideIn;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
@@ -57,10 +62,10 @@ p {
 }
 
 @keyframes slideIn {
-  0% { transform: translateY(400px); }
-  60% { transform: translateY(-50px); }
-  80% { transform: translateY(10px); }
-  100% { transform: translateY(0); }
+  0% { transform: translateX(400px); }
+  60% { transform: translateX(-50px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
 }
 
 @keyframes diagonal-slide {
