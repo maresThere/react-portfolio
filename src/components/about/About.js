@@ -11,7 +11,7 @@ class About extends Component {
     <div className='dark-gray-bg'>
     <div className='about'>
     <section>
-    <h4>Who is she?</h4>
+    <h4>This is who I am.</h4>
     <div>
     <p><strong>An enthusiastic, passionate problem solver, with a varied and dynamic skill set</strong>.
     </p>
@@ -49,7 +49,7 @@ class About extends Component {
       <div>
       <p>Much of my time away from work is spent improving my web design and coding skills. But I do find time to do things to give me balance.  Because I sit at a desk all day, I try and make exercise a priority.</p>
       <p>I've recently volunteered for Big Brothers Big Sisters and I have a little sister that I spend time with twice a month. I've had a fairly easy life compared to most people, so it's important to me to give back some way.</p>
-      <p>I have a healthy interest in waste free living. I'm far from perfect at it, but I try and reduce and re-use whenever possible.</p><p>Last but not least, I have collected four little animals from my time in animal rescue. I had to give it up because I ran out of room</p>
+      <p>I have a healthy interest in waste free living. I'm far from perfect at it, but I try and reduce and re-use whenever possible.</p><p>Last but not least, I have collected four little animals from my time in animal rescue. I had to give it up because I ran out of room!</p>
       </div>
       </section>
       <section className='pet-section'>
