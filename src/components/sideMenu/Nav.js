@@ -58,7 +58,7 @@ class Nav extends Component {
         <p className = 'card' >
         <i className = 'fa fa-paper-plane-o'
         aria-hidden = 'true' / >
-        <a href = 'mailto:mareKellyJax@gmail.com' > mareKellyJax @gmail.com < /a></p >
+        <a href = 'mailto:mareKellyJax@gmail.com' > mareKellyJax@gmail.com < /a></p >
         <ContactIcons / >
       </div>
       </nav>
