@@ -11,7 +11,7 @@ const roles = [
       'Design & code responsive landing, subscription center, and expired offer pages','Run queries to segment audiences for marketing campaigns', 'Create interactive "getting started" PDF documents for new customer set-up']
   },
   {
-    title: 'Part-time Sales Associate',
+    title: 'Sales Associate',
     place: 'White House Black Market',
     date: '2014-2015, 10/2018 - Present',
     bullets:

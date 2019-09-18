@@ -6,7 +6,7 @@
   flex-direction: column;
   align-self: center;
   flex-wrap: wrap;
-  background-color: $silkymauve;
+  background-color: #ffe8e0;
 
   @include animation;
 
@@ -21,7 +21,7 @@
   }
 
   * {
-    color: $sexygrey;
+    color: #7A716D;
   }
 
   h3,
@@ -29,27 +29,37 @@
   h5 {
     color: #333;
     font-size: 1.2em;
+    // margin-block-start: 0;
+
   }
 
   h3 {
-    padding-bottom: .5em;
-    border-bottom: 1px solid $golden;
+    padding-bottom: 0;
+    margin-block-start: 50px;
+    border-bottom: 2px solid #7A716D;
+    font-family: $heading-font-fam;
+  }
+
+  .sedu {
+    font-family: 'Rochester', cursive;
+  }
+
+  .exp {
+    font-size: 2.1em;
+    font-weight: 100;
   }
 
   h4 {
     margin: 10px 0;
-  }
-
-  .resDecor {
-    color: $golden;
-    margin-right: .5em;
   }
 }
 
 ul.bullets {
   margin-top: 2px;
   // padding-left: 10px;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-family: $heading-font-fam;
+  padding-inline-start: 20px;
 }
 
 .skillset {
@@ -68,11 +78,16 @@ ul.bullets {
 .placeDate {
   margin-bottom: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   font-family: 'Josefin Sans', sans-serif;
-  // font-weight: 300;
+
+  span {
+    display: block;
+    margin: .3em;
+  }
 }
+
 
 @media screen and (min-width: 800px) {
   .resume {

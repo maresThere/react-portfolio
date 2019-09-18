@@ -8,7 +8,7 @@ class SkillItem extends Component {
     )
     return (<ul className='bullets skills'>
     <h3 className='sedu'>
-    <span className='resDecor'>&diams;</span>
+    <span className='resDecor'></span>
     {title}</h3>
         {bulletList}
       </ul>
