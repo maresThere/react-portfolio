@@ -24,33 +24,33 @@
     color: #7A716D;
   }
 
+  h4 {
+    margin: .5em 0;
+  }
+
   h3,
   h4,
   h5 {
     color: #333;
-    font-size: 1.2em;
-    // margin-block-start: 0;
-
+    font-size: 1.4em;
   }
 
   h3 {
     padding-bottom: 0;
-    margin-block-start: 50px;
-    border-bottom: 2px solid #7A716D;
+    // margin-block-start: 50px;
+    border-bottom: 12px solid #7A716D;
     font-family: $heading-font-fam;
   }
 
   .sedu {
     font-family: 'Rochester', cursive;
+    border-bottom: 3px solid #7A716D;
   }
 
-  .exp {
-    font-size: 2.1em;
+  .headline {
+    font-size: 2.5em;
     font-weight: 100;
-  }
-
-  h4 {
-    margin: 10px 0;
+    font-family: $heading-font-fam;
   }
 }
 
@@ -59,7 +59,7 @@ ul.bullets {
   // padding-left: 10px;
   font-size: 1.1em;
   font-family: $heading-font-fam;
-  padding-inline-start: 20px;
+  // padding-inline-start: 20px;
 }
 
 .skillset {
@@ -72,11 +72,11 @@ ul.bullets {
   list-style-type: none;
   padding-inline-start: 0;
   width: 150px;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 .placeDate {
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +84,15 @@ ul.bullets {
 
   span {
     display: block;
-    margin: .3em;
+    margin: 2px 0;
+  }
+
+  .place {
+    font-weight: bold;
+  }
+
+  .date {
+
   }
 }
 
@@ -108,4 +116,12 @@ ul.bullets {
   .skillset {
     flex-direction: column;
   }
+
+  .placeDate {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+ }
 }

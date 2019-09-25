@@ -11,21 +11,16 @@ class Resume extends Component {
     return <div className='resume'>
 
       <div className='experience'>
-      <h3 className='exp'>
-        <span className='resDecor'></span>
-        Experience
-      </h3>
+      <h3 className='headline'>Experience</h3>
         {roles.map(item => <ResumeJobs key={item.title} details={item} />)}
       </div>
       <div className='skillsEducation'>
+        <h3 className='headline'>Skills</h3>
         <div className='skillset'>
           {SKILL_DATA.map(item => <SkillItem key={item.title} details={item} />)}
         </div>
         <div className='education'>
-          <h3 className='exp'>
-            <span className='resDecor'></span>
-             Education
-          </h3>
+          <h3 className='headline'>Education</h3>
           <div className='edu'>
             {schools.map(item => <ResumeSchools key={item.degree} details={item} />)}
           </div>
