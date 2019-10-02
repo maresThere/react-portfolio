@@ -50,10 +50,9 @@ h2.top-title {
   padding: 1em;
   justify-content: center;
   height: 100%;
-  grid-gap: 0.5em;
-  margin: 0 auto;
-  width: 90%;
-  background: #bd8c7d;
+  grid-gap: .5em 1.5em;
+  // margin: 0 auto;
+  width: 95%;
 }
 
 h1,
@@ -69,16 +68,14 @@ a:any-link {
 }
 
 @media screen and (min-width: 800px) {
-  .grid-container {
-    display: grid;
-    padding: 1em;
-    justify-content: center;
-    height: 100%;
-    grid-gap: 0.5em;
-    margin: 0 auto;
-    width: 90%;
-    background: #bd8c7d;
-  }
+  // .grid-container {
+  //   display: grid;
+  //   padding: 1em;
+  //   justify-content: center;
+  //   height: 100%;
+  //   grid-gap: .5em;
+  //   margin: 0 auto;
+  // }
 
   .dark-gray-bg {
     margin-top: 50px;

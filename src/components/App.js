@@ -35,6 +35,7 @@ class App extends Component {
       <div className='App'>
       <Menu/>
       <Nav/>
+
           <Route exact path='/' render={(props) => {
             return <Intro {...props} profile={this.state.profile} name={this.state.name} bio={this.state.bio} />
           }} />
@@ -50,6 +51,7 @@ class App extends Component {
             <Route path='/resume' component={Resume} />
 
           </Switch>
+
       </div>
     </Router>
   }

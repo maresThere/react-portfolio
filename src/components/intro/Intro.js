@@ -32,9 +32,12 @@ class Intro extends Component {
 <h1>I'm {this.props.name}</h1>
             </div>
             </div>
-              <div className='introText'>
-              <p>Web Design | Print Design | Marketing</p>
-              </div>
+              <ul className='introText'>
+              <li>Web Design</li>
+              <li>Print Design</li>
+              <li>Marketing</li>
+               
+              </ul>
               <div className = 'introContact'>
                 <p className = 'introCard' >
                 <i className = 'fa fa-phone' aria-hidden = 'true' />&nbsp;

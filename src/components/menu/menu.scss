@@ -17,7 +17,6 @@
   justify-content: space-around;
   align-items: flex-end;
 
-
   li {
     list-style-type: none;
     margin: 0 0 20px 0;
@@ -25,9 +24,8 @@
 
   li:last-child {
   margin-right: 70px;
+  }
 }
-}
-
 
 @media screen and (min-width: 800px) {
   .menu {

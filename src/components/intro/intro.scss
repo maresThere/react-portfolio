@@ -34,8 +34,24 @@ h2.hello {
   z-index: 0;
 }
 
-.introText > p {
-  margin-left: 0;
+ul.introText {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  max-width: 425px;
+  display: flex;
+  padding-inline-start: 0;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // text-align: center;
+    // margin-left: 0;
+  }
+}
+
+.introText li {
+  align-self: center;
 }
 
 .introContact {
