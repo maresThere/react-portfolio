@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import Redbox from 'redbox-react'
-
+import autotrack from 'autotrack'
 import App from './components/App'
 
 import './styles/screen.scss'
