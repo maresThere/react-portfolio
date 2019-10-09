@@ -1,13 +1,6 @@
 
 const SKILL_DATA = [
-  {
-    id: 1,
-    title: 'soft skills',
-    bullets: [
-    'Analytical', 'Problem Solving',
-    'Adaptability', 'Creativity', 'Diplomacy'
-    ]
-  },
+
   {
     id: 2,
     title: 'web design skills',
@@ -28,14 +21,22 @@ const SKILL_DATA = [
     id: 4,
     title: 'email CMS',
     bullets: [
-    'ExactTarget Marketing Cloud', 'Constant Contact', 'email Campaigns'
+    'ExactTarget Marketing Cloud', 'Constant Contact', 'email campaigns'
     ]
   },
   {
     id: 5,
     title: 'marketing skills',
     bullets: [
-    'SEO', 'Google Analytics', 'copy writing','copy editing'
+    'SEO', 'Google Analytics', 'Copy Writing','Copy Editing'
+    ]
+  },
+  {
+    id: 1,
+    title: 'soft skills',
+    bullets: [
+    'Analytical', 'Problem Solving',
+    'Adaptability', 'Creativity', 'Diplomacy'
     ]
   }
 ]

@@ -8,7 +8,8 @@ import SkillItem from './SkillItem'
 
 class Resume extends Component {
   render () {
-    return <div className='resume'>
+    return <div className='dark-gray-bg'>
+    <div className='resume'>
 
       <div className='experience'>
       <h3 className='headline'>Experience</h3>
@@ -26,6 +27,7 @@ class Resume extends Component {
           </div>
         </div>
       </div>
+    </div>
     </div>
   }
 }
