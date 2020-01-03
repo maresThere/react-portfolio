@@ -10,6 +10,7 @@ nav {
   top: 0;
   width: 300px;
   height: 100vh;
+  color: $golden;
   font-family: $heading-font-fam;
   box-shadow: 2px 2px #353535;
   transition: right  0.3s ease-in;
@@ -25,7 +26,7 @@ ul.navLinks {
 }
 
 li.navBtn {
-  padding: 5px 0;
+  padding: 25px;
   transition: 0.5s;
 
   a {

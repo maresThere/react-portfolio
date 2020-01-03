@@ -1,5 +1,5 @@
 @import 'utility';
-@import 'toggleButton', 'resume', 'nav';
+@import 'toggleButton', 'nav';
 @import '../components/menu/menu';
 @import '../components/intro/intro';
 @import '../components/about/about';
@@ -8,18 +8,28 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600');
 @import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
 
-
 html {
   height: 100vh;
   font-family: $body-font-fam;
-  font-size: $base-text-size;
-  color: $golden;
-  background-color: #1d1e22;
+  background-color: #333;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  line-height: 1.5em;
 }
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  // background-color: green;
 }
 
 .App {
@@ -33,25 +43,26 @@ body {
   flex-direction: column;
   background-image: url('/images/footer_lodyas.png');
   background-repeat: repeat;
-  width: 100%;
   min-height: 100vh;
   margin-top: 0;
 }
 
+// design pages - may delete
 h2.top-title {
   text-align: center;
   padding: 0.5em;
   margin-top: 3em;
   font-family: 'Rochester', cursive;
+  color: $golden;
 }
-
+// not sure I need this amymore
+//
 .grid-container {
   display: grid;
   padding: 1em;
   justify-content: center;
   height: 100%;
   grid-gap: .5em 1.5em;
-  // margin: 0 auto;
   width: 95%;
 }
 
@@ -61,6 +72,7 @@ h3,
 h4,
 h5 {
   font-family: $heading-font-fam;
+  // color: $golden;
 }
 
 a:any-link {

@@ -1,0 +1,286 @@
+h1 {
+  font-size: 1.3rem;
+  color: #7ca1f7;
+  text-align: center;
+}
+
+.case-study {
+  background: white;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+
+  ul {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  h4,
+  h3 {
+    font-size: 2rem;
+    margin: 0.5em 0;
+    font-weight: 600;
+    color: #f7d37c;
+  }
+
+  h3.blue {
+    color: #465c8c;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+    margin: 3% 0;
+    color: #f7d37c;
+  }
+
+  p {
+    color: white;
+  }
+
+  figure {
+    margin: 0;
+  }
+  .placeholder {
+    width: 100%;
+  }
+}
+
+.intro {
+  background-image: linear-gradient(to top, #7ca1f7, #6989d2, #5872ae, #465c8c, #36466b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+
+  p.intro-question {
+    color: #f7d37c;
+    // font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    max-width: 700px;
+  }
+}
+
+.overview {
+  display: grid;
+  grid-gap: 20px;
+  padding: 3%;
+  margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "text text text text"
+    "role role role role"
+    "team team team team";
+}
+
+.overview-text {
+  grid-area: text;
+  // max-width: 1000px;
+  // justify-self: start;
+}
+
+.myrole { grid-area: role; }
+
+.team {
+  grid-area: team;
+}
+
+.problem-statement {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  background-image: linear-gradient(to bottom, #fcee71,#fcee71, #fcda56, #fdc63b, #feb021);
+  grid-template-areas:
+    "title title title"
+    "text text text"
+    "data data data";
+}
+
+.problem-statement > h3 { grid-area: title; }
+.problem-statement-desc { grid-area: text; }
+.problem-statement > ul { grid-area: data; }
+
+.persona {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-gap: 2em;
+  color: white;
+  background-image: linear-gradient(to top, #6989d2, #5872ae, #465c8c, #36466b, #36466b);
+  grid-template-areas:
+    "text text text"
+    "image image image"
+    "demog demog demog"
+    "data data data";
+}
+
+.persona-text {
+  grid-area: text;
+
+  h4 { font-family: 'Rochester', cursive; }
+}
+
+.persona-image {
+  grid-area: image;
+  max-width: 300px;
+  justify-self: center;
+
+  img {
+    border-bottom: 3px solid white;
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+.persona-demographics { grid-area: demog; }
+
+.persona-data {
+  grid-area: data;
+  max-width: 400px;
+}
+
+.table-design {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5em;
+  background-image: linear-gradient(to top, #7ca1f7, #6989d2, #5872ae, #465c8c, #36466b);
+  grid-template-areas:
+    "text text text text text text"
+    "image image image image image image"
+    "data data data data data data";
+}
+
+.table-design-text {
+  grid-area: text;
+  max-width: 1000px;
+}
+
+.table-design-image {
+
+  grid-area: image;
+
+  img {
+    border: 12px solid #f7d37c;
+    box-shadow: 1px 1px 7px #333;
+    margin: 0;
+    // object-fit: contain;
+    max-width: 500px;
+  }
+}
+
+.table-design-considerations {
+  grid-area: data;
+  // max-width: 500px;
+  padding: 1%;
+}
+
+.strategy-pages {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5em;
+  background-image: linear-gradient(to bottom, #fcee71, #fcee71, #fcda56, #fdc63b, #feb021);
+  grid-template-areas:
+    "text text text text text text"
+    "image image image image image image"
+    "data data data data data data";
+
+  ul,
+  p,
+  h4,
+  h6 {
+    color: #36466b;
+  }
+}
+
+.strategy-page-text {
+  grid-area: text;
+  max-width: 800px;
+ }
+
+.strategy-page-image {
+  grid-area: image;
+  max-width: 450px;
+}
+.engagement-list { grid-area: data; }
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro {
+    .intro-question {
+      font-size: 2rem;
+      font-weight: normal;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .problem-statement {
+    grid-template-areas:
+      "title title title"
+      "text data data";
+  }
+
+  .overview {
+    grid-template-areas:
+      "text text text text"
+      "role role team team";
+  }
+
+  .persona {
+    grid-template-areas:
+      "text text text"
+      "image image demog"
+      "image image data";
+  }
+
+  .strategy-pages {
+    grid-template-areas:
+      "text text text text text text"
+      "image image image data data data";
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .engagement-list { justify-content: left; }
+
+}
+
+@media screen and (min-width: 900px) {
+  .table-design {
+    grid-template-areas:
+      "text text text text text text"
+      "image image image data data data";
+  }
+
+  // .overview {
+  //   grid-template-areas:
+  //     "text text role role"
+  //     "text text team team ";
+  // }
+
+}
+
+.user-research {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 3%;
+  background-image: linear-gradient(to bottom, #fcee71,#fcee71, #fcda56, #fdc63b, #feb021);
+}
+
+.strategy-page-image {
+  img {
+    box-shadow: 1px 1px 7px #333;
+    background: white;
+  }
+}

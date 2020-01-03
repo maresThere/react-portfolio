@@ -41,7 +41,7 @@ class Nav extends Component {
       </button>
       <nav className = {`${isMenuOpen ? 'show' : ''}`
       }>
-      <ul className = 'navLinks' > {
+      <ul className = 'navLinks'> {
         navItems.map(item => ( <li key={item.label}
           className = 'navBtn'>
           <NavLink to = {item.link}> {item.label} </NavLink>
@@ -50,6 +50,7 @@ class Nav extends Component {
       } </ul>
 
       <div className = 'contact'>
+
         <h2> Marianne Kelly < /h2>
         <p className = 'card' >
         <i className = 'fa fa-phone' aria-hidden = 'true' />
@@ -58,6 +59,7 @@ class Nav extends Component {
         <p className = 'card' >
         <i className = 'fa fa-paper-plane-o'
         aria-hidden = 'true' / >
+        
         <a href = 'mailto:mareKellyJax@gmail.com' > mareKellyJax@gmail.com < /a></p >
         <ContactIcons / >
       </div>

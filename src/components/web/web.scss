@@ -11,6 +11,10 @@
   // background: #bd8c7d;
 }
 
+.background-overlay {
+  background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.1) 100%) repeat scroll 0% 0%;
+}
+
 li.pen {
   margin-bottom: 10px;
   list-style-type: none;

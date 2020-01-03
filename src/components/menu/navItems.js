@@ -7,20 +7,16 @@ export const navItems = [
 { link: '/about',
   label: 'About'
 },
-{ link: '/resume',
-  label: 'Resume'
+{ link: '/UseCase',
+  label: 'Use Case'
 },
-{ link: '/print',
-  label: 'Print Design'
+
+{ link: '/ideas',
+  label: 'Little Ideas'
 },
-{ link: '/package',
-  label: 'Package Design'
-},
-{ link: '/web',
-  label: 'Web Design'
-},
+
 { link: '/emails',
-  label: 'Email Design'
+  label: 'Emails'
 }
 
 ]

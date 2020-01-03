@@ -46,9 +46,11 @@ $goldenink: lighten($golden, 10%);
 }
 
 p {
-  margin: 10px;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin: 10px 0;
+  font-weight: 400;
   font-family: $heading-font-fam;
-  color: $golden;
 }
 
 @keyframes fadeIn {
