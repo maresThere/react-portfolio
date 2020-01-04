@@ -27,7 +27,7 @@ class Intro extends Component {
     return (
       <div style={ sectionStyle }>
           <div className='introContainer'>
-            <img src={mareKelly} />
+
             <div className='introBox'>
               <div className='intro-headline'>
                 <div className='hello'>
@@ -36,17 +36,20 @@ class Intro extends Component {
                 </div>
               </div>
               <div className='ctas'>
-              <div className='cta-1'>  <NavLink to = '/ideas'> <i className='fas fa-chalkboard-teacher' aria-hidden='true'></i></NavLink>
-
-                <p>What makes me special?</p>
+              <div className='cta-1'>
+              <NavLink to = '/about'> <img src={mareKelly} className='intro-icon' /></NavLink>
+              <h2>About me</h2>
+                <p>My background</p>
               </div>
               <div className='cta-2'>
-              <NavLink to = '/UseCase'> <i className='fas fa-chalkboard-teacher' aria-hidden='true'></i></NavLink>
-                <p> Learn about my process</p>
+              <NavLink to = '/UseCase'> <i className='fas fa-brain fa-3x' aria-hidden='true'></i></NavLink>
+                <h2>Use Case</h2>
+                <p> Here is an example of a project I recently developed and designed.</p>
               </div>
               <div className='cta-3'>
-                <a href='https://codepen.io/maresThere/'target='_blank'><i className='fab fa-codepen fa-2x' aria-hidden='true' /></a>
-                <p>Here is a link to my codepen </p>
+                <a href='https://codepen.io/maresThere/'target='_blank'><i className='fab fa-codepen fa-3x' aria-hidden='true' /></a>
+                <h2>dev sandbox</h2>
+                <p>I like to work on code here. </p>
               </div>
             </div>
           </div>

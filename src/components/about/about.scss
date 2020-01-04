@@ -103,10 +103,12 @@ header {
         flex-direction: column;
         align-items: center;
         // font-size: 1.2em;
-        width: 300px;
+        width: 70%;
 
         h5 {
           color: #465c8c;
+          width: 275px;
+          text-align: center;
         }
       }
     }

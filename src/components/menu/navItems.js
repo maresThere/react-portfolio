@@ -15,8 +15,8 @@ export const navItems = [
   label: 'Little Ideas'
 },
 
-{ link: '/emails',
-  label: 'Emails'
-}
+// { link: '/emails',
+//   label: 'Emails'
+// }
 
 ]

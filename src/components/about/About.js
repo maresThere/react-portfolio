@@ -45,7 +45,12 @@ class About extends Component {
         <img src={process} className='past-icons'/>
       <h5>Troubleshooter</h5>
       </div>
-      <p>Optimized performance at properties across Florida by researching individual property practices, suggesting improvements, and implementing efficient administrative and sales process flows.</p>
+      <p>Optimized performance at properties across Florida.
+
+        Observed and interviewed staff.
+        Suggested improvements.
+        Implemented efficient administrative and sales process flows.
+    </p>
       </li>
       <li>
       <div className='past-title'>
