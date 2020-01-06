@@ -35,21 +35,34 @@ class Intro extends Component {
                 </div>
               </div>
               <div className='ctas'>
-              <div className='cta-1'>
-              <NavLink to = '/about'> <img src={mareKelly} className='intro-icon' /></NavLink>
-              <h2>About me</h2>
-                <p>My background</p>
-              </div>
-              <div className='cta-2'>
-              <NavLink to = '/UseCase'> <i className='fas fa-brain fa-3x' aria-hidden='true'></i></NavLink>
-                <h2>Use Case</h2>
-                <p> Here is an example of a project I recently developed and designed.</p>
-              </div>
-              <div className='cta-3'>
-                <a href='https://codepen.io/maresThere/'target='_blank'><i className='fab fa-codepen fa-3x' aria-hidden='true' /></a>
-                <h2>dev sandbox</h2>
-                <p>I like to work on code here. </p>
-              </div>
+                <div className='cta-intro'>
+                <NavLink to = '/about'>
+                <img src={mareKelly} className='intro-icon' />
+                  </NavLink>
+                <h2>About Me</h2>
+                  <p>My business background strengthens my ability to see the big picture.</p>
+
+                </div>
+                <div className='cta-intro'>
+                <NavLink to = '/UseCase'>
+                <i className='fas fa-brain fa-3x' aria-hidden='true'>
+                </i>
+                </NavLink>
+                  <h2>Use Case</h2>
+                  <p> Here is an example of a project I recently developed and designed.</p>
+                </div>
+                <div className='cta-intro'>
+                  <a href='https://codepen.io/maresThere/'target='_blank'>
+                    <i className='fab fa-codepen fa-3x' aria-hidden='true' />
+                      </a>
+                    <h2>Coding Samples</h2>
+                    <p>Codepen is where I work on responsive compositions.</p>
+                </div>
+                <div className='cta-intro'>
+                  <a href='https://drive.google.com/file/d/1jf6gyjv_04PPQuHQpHOwqPIADgbl5DtV/view?usp=sharing/'target='_blank'><i className='fas fa-file-pdf fa-3x' aria-hidden='true' /></a>
+                  <h2>Resume</h2>
+                  <p>Job history and skills summary. </p>
+                </div>
             </div>
           </div>
         </div>

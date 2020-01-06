@@ -21,18 +21,19 @@
   z-index: -2;
 }
 
+span.light { font-weight: 100; }
+
 .introContainer {
   // border: 2px solid white;
-  // align-self: flex-start;
-  margin-top: 75px;
-  margin: 7%;
+  // align-items: space-between;
+  margin: 75px 0 0 3%;
 }
 
 .introBox {
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  justify-content: flex-start;
+  // height: 80vh;
+  justify-content: end;
   color: #f7d37c;
 
   .hello > h1,
@@ -47,46 +48,38 @@
   }
 }
 
-span.light {
-  font-weight: 100;
-}
-
 .ctas {
   margin: 7% 0;
   width: 100%;
-  // border: 1px solid white;
 
-  .cta-1,
-  .cta-2,
-  .cta-3 {
+  .cta-intro {
     display: grid;
     grid-template-columns: 90px 2fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 75px;
     grid-template-areas:
-      "pic headline"
-      "pic body";
+      "pic headline";
+    border-radius: 20px;
+    background: #444;
+    margin: 10px;
 
     h2 {
       grid-area: headline;
       margin-bottom: 0;
-      align-self: end;
+      align-self: center;
     }
   }
 
-  .cta-1:hover,
-  .cta-2:hover,
-  .cta-3:hover {
+  .cta-intro:hover {
     box-shadow: 3px 1px 3px;
   }
 
   img {
-    // width: 100%;
     max-width: 60px;
-    // max-height: 75px;
     border-radius: 50%;
     border: 3px solid #f7d37c;
   }
-a,
+
+  a,
   .intro-icon {
     grid-area: pic;
     align-self: center;
@@ -94,33 +87,40 @@ a,
   }
 
   p {
+    display: none;
     grid-area: body;
     // border: 1px solid white;
     font-size: 1.2rem;
-    margin-top: 0;
+    line-height: 1.4rem;
+    margin: 0 2px 0 0;
     align-self: start;
-  }
-
-  i {
-    // font-size: 1.5rem;
   }
 }
 
+@media screen and (min-width: 470px) {
+  .ctas {
+    .cta-intro {
+      display: grid;
+      grid-template-columns: 90px 2fr;
+      grid-template-rows: 50px 50px;
+      grid-template-areas:
+        "pic headline"
+        "pic body";
+    }
+
+    p {
+      display: block;
+    }
+  }
+}
 
 @media screen and (min-width: 800px) {
   .introBox {
-
     height: 80vh;
     justify-content: space-around;
-
-    .intro-headline {
-      // justify-self: 'flex-start'
-    }
   }
 
-  .cta-1 > p,
-  .cta-2 > p,
-  .cta-3 > p {
+  .cta-intro {
     max-width: 70%;
   }
 }
