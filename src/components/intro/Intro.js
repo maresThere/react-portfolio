@@ -27,7 +27,6 @@ class Intro extends Component {
     return (
       <div style={ sectionStyle }>
           <div className='introContainer'>
-
             <div className='introBox'>
               <div className='intro-headline'>
                 <div className='hello'>

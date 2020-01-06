@@ -46,9 +46,7 @@ class About extends Component {
       <h5>Troubleshooter</h5>
       </div>
       <p>Optimized performance at properties across Florida.
-
         Observed and interviewed staff.
-        Suggested improvements.
         Implemented efficient administrative and sales process flows.
     </p>
       </li>

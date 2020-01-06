@@ -23,7 +23,7 @@
 
 .introContainer {
   // border: 2px solid white;
-  align-self: flex-start;
+  // align-self: flex-start;
   margin-top: 75px;
   margin: 7%;
 }
@@ -71,6 +71,12 @@ span.light {
       margin-bottom: 0;
       align-self: end;
     }
+  }
+
+  .cta-1:hover,
+  .cta-2:hover,
+  .cta-3:hover {
+    box-shadow: 3px 1px 3px;
   }
 
   img {
