@@ -38,13 +38,33 @@
 }
 
 .responsive {
-  width: 100%;
+  // width: 100%;
+}
+
+.print-desc {
+  border: 1px solid #f7d37c;
+  min-width: 300px;
+  height: 388px;
 }
 
 .poster {
   max-width: 300px;
   // min-width: 200px;
-  margin: 1%;
+  margin: .5%;
+}
+
+.print-desc-short {
+  border: 1px solid #f7d37c;
+  max-width: 300px;
+  margin: .5%;
+  max-height: 200px;
+}
+
+.half-page {
+  // max-width: 300px;
+  max-height: 200px;
+  margin: .5%;
+  height: auto;
 }
 
 .adWide {
