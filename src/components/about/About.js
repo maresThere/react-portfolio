@@ -16,17 +16,27 @@ class About extends Component {
       <header>
 
         <div className='header-content'>
-          <h4>A History of Guiding the Customer Experience</h4>
-          <p>My previous career involved spotting and solving problems everyday. As a Manager, everyone was a customer. It was important to balance the goals of the owners and the needs of the renters. </p>
-          <h4>A Tireless Search for the Right Fit</h4>
-          <p>I left the Property Management industry to find a career that would satisfy my love for design, creativity, and technology. I began with obtaining an A.S. degree in Web Development which gave me an understanding of a broad field.</p>
-          <p>From there I did graphic and web design internship at a small agency. Then a retail chain and did graphic design and marketing. Then a coding bootcamp, and then a digital production role in the marketing department at a saas and publishing business.</p>
-          <p>My search was not constricted to the 40 hour work week. Nights and weekends are for practicing code and design skills, as well as keeping up with the ever evolving industry.</p>
-          <h4>Finding a Career I Love</h4>
-          <p>The reason I love User Experience is because its mission is to satisfy customers. With that, I get to use my embedded skills.</p><p>Most of all, I can be involved in the product develpoment process from end to end.</p>
-          <p>I am obsessed with order and efficiency when it comes to any activity involving a customer.</p>
+          <div className='header-content-1'>
+            <img src={manager} className='header-image'/>
+            <div>
+              <h4>A History of Guiding the Customer Experience</h4>
+              <p>My previous career involved spotting and solving problems everyday. As a Manager, everyone was a customer. It was important to balance the goals of the owners and the needs of the renters. </p>
+            </div>
+          </div>
+          <div className='header-content-2'>
+            <div>
+              <h5>A Tireless Search for the Right Fit</h5>
+              <p>I left Property Management to find a career to satisfy my love for design, creativity, and technology.</p>
+              <p>I started with a graphic and web design internship at a small agency. Then a design and marketing role at a retail chain. Then a coding bootcamp, and a digital production role at a saas and content publisher.</p>
+              <p>My search was not constricted to the 40 hour work week. Nights and weekends are for practicing code and design skills, as well as keeping up with the ever evolving industry.</p>
+            </div>
+            <div>
+              <h5>Finding a Career I Love</h5>
+              <p>The reason I love User Experience is because its mission is to satisfy customers. With that, I get to use my embedded skills.</p><p>Most of all, I can be involved in the product develpoment process from end to end.</p>
+              <p>I am obsessed with order and efficiency when it comes to any activity involving a customer.</p>
+            </div>
+          </div>
         </div>
-        <img src={manager} className='header-image'/>
       </header>
       <section className='past'>
       <div className='past-content'>

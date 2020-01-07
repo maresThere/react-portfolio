@@ -1,17 +1,18 @@
 .print {
   color: #f7d37c;
+  animation: pageEntry;
+  animation-duration: 1s;
+}
+
+@keyframes pageEntry {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .print-images {
   display: flex;
   flex-flow: row wrap;
-  // align-content: center;
   justify-content: center;
-}
-
-.print-small {
-  display: flex;
-  flex-direction: column;
 }
 
 .print-desc {
@@ -37,10 +38,6 @@
   }
 }
 
-.responsive {
-  // width: 100%;
-}
-
 .print-desc {
   border: 1px solid #f7d37c;
   min-width: 300px;
@@ -49,31 +46,19 @@
 
 .poster {
   max-width: 300px;
-  // min-width: 200px;
   margin: .5%;
 }
 
 .print-desc-short {
   border: 1px solid #f7d37c;
   max-width: 300px;
-  margin: .5%;
+  // margin: .5%;
+  padding-bottom: .5%;
   max-height: 200px;
 }
 
 .half-page {
-  // max-width: 300px;
   max-height: 200px;
   margin: .5%;
   height: auto;
-}
-
-.adWide {
-  width: 100%;
-  max-width: 400px;
-}
-
-.adshort {
-  width: 100%;
-  max-width: 400px;
-  grid-row: span 1;
 }

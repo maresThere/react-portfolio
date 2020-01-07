@@ -8,17 +8,10 @@ import '../menu/menu.scss'
 // Cover/home page - my picture
 
 const sectionStyle = {
-  // backgroundImage: `url(${background})`,
-  // backgroundPosition: 'center',
-  // backgroundSize: 'cover',
-  // backgroundRepeat: 'no-repeat',
-  // backgroundAttachment: 'fixed',
-  // width: '100%',
   height: '100vh',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-start'
-  // position: 'absolute'
 
 }
 

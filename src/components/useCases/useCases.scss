@@ -8,7 +8,14 @@ h1 {
   background: white;
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
+  animation: pageEntry;
+  animation-duration: 2s;
 
+
+  @keyframes pageEntry {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
   ul {
     font-size: 1.5rem;
     color: white;

@@ -13,7 +13,7 @@ class Print extends Component {
     return (
 
       <div className='dark-gray-bg print'>
-          <h2 className='top-title'>Print Design &amp; Typesetting</h2>
+          <h2 className='top-title'>Print &amp; Composition</h2>
           <div className='print-images'>
           <div className='print-desc poster'>
             <div className='print-desc-text'>
@@ -26,9 +26,9 @@ class Print extends Component {
               <i className='fas fa-arrow-right fa-2x'  aria-hidden='true'></i>
 
             </div></div>
-          <img src={maleDraft} className='responsive poster'/>
-          <img src={poster} className='responsive poster'/>
-          <img src={naturalBeauty2} className='responsive poster'/>
+          <img src={maleDraft} className='poster'/>
+          <img src={poster} className='poster'/>
+          <img src={naturalBeauty2} className='poster'/>
           <div className='print-desc-short'>
             <div className='print-desc-text'>
               <h3>Campaign Ideas</h3>
@@ -39,11 +39,9 @@ class Print extends Component {
               <i className='fas fa-arrow-right fa-2x'  aria-hidden='true'></i>
             </div>
           </div>
-
-              <img src={personaAd1} className='responsive half-page'/>
-            <img src={personaAd2} className='responsive half-page'/>
-
-          <img src={personaAd3} className='responsive half-page'/>
+            <img src={personaAd1} className='half-page'/>
+            <img src={personaAd2} className='half-page'/>
+            <img src={personaAd3} className='half-page'/>
           </div>
       </div>
     )
