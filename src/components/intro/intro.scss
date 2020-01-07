@@ -20,7 +20,7 @@
 span.light { font-weight: 100; }
 
 .introContainer {
-  margin: 75px 0 0 3%;
+  margin: 85px 0 0 2%;
   animation: pageEntry;
   animation-duration: 1.5s;
   }
@@ -33,7 +33,7 @@ span.light { font-weight: 100; }
 .introBox {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   color: #f7d37c;
 
   .hello > h1,

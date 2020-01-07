@@ -19,7 +19,7 @@ class UseCases extends Component {
             </p>
             <div className='overview'>
             <div className='overview-text'>
-              <h4>Product Project Summary</h4>
+              <h4>Project Summary</h4>
               <p>Owners wanted to acquire subscribers by offering a low priced subscription product. The product is to deliver a snap shot of what subscribers would have access to in a higher priced offering.</p>
               <p>We pulled a feature from a product that gives stock ideas based on a multitude of filters.</p>
             </div>
@@ -88,7 +88,6 @@ class UseCases extends Component {
                 <h6>Engage the user with free content</h6>
                   <p>Because this product should be inexpensive to create, we can use existing content and offers.
                   </p>
-                    <p>I chose to add icons for the industry sectors. My strategy for the icons is to include them on blog post articles so users get a visual cue of the article topic.</p>
                 </div>
                     <figure className="strategy-page-image">
                     <img src={journeyMap} className='placeholder' />
@@ -102,9 +101,10 @@ class UseCases extends Component {
                   </div>
           <div className="table-design">
             <div className="table-design-text">
-            <h3>Choose content | Design table</h3>
-            <p>The main program provides a list of stocks chosen by algorithms created from a particular investment strategy. Each stock item includes the ticker symbol and several data points about the stock.</p>
-            <p>My first task was to decide what content to pull from the main product.
+            <h3>Choose Content | Design Table</h3>
+            <p>The higher priced program provides a list of stocks chosen by algorithms created from a particular investment strategy filter.</p>
+            <p> We took the top stock from each of the filters to deliver to subscribers.  Each stock item includes the ticker symbol and several data points about the stock.</p>
+            <p>My task was to decide what content to pull from the main product.
             </p>
               <p>I consulted with the Product Manager to determine which data points would provide the most insight to the customer.</p>
             </div>

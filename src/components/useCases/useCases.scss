@@ -11,7 +11,6 @@ h1 {
   animation: pageEntry;
   animation-duration: 2s;
 
-
   @keyframes pageEntry {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -79,17 +78,10 @@ h1 {
     "team team team team";
 }
 
-.overview-text {
-  grid-area: text;
-  // max-width: 1000px;
-  // justify-self: start;
-}
+.overview-text { grid-area: text; }
 
 .myrole { grid-area: role; }
-
-.team {
-  grid-area: team;
-}
+.team { grid-area: team; }
 
 .problem-statement {
   padding: 3em;
