@@ -12,9 +12,10 @@ h1 {
   animation-duration: 2s;
 
   @keyframes pageEntry {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
+
   ul {
     font-size: 1.5rem;
     color: white;
@@ -34,7 +35,7 @@ h1 {
 
   h6 {
     font-size: 1.6rem;
-    margin: 3% 0;
+    margin: 3% 0 0 0;
     color: #f7d37c;
   }
 
@@ -178,16 +179,13 @@ figcaption {
   padding: 1%;
 }
 
+.content-development,
 .strategy-pages {
   padding: 3%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 0.5em;
   background-image: linear-gradient(to bottom, #fcee71, #fcee71, #fcda56, #fdc63b, #feb021);
-  grid-template-areas:
-    "text text text text text text"
-    "image image image image image image"
-    "data data data data data data";
 
   ul,
   p,
@@ -197,11 +195,43 @@ figcaption {
   }
 }
 
+.content-development {
+  grid-template-areas:
+    "text text text text text text"
+    "ex1 ex1 ex1 ex1 ex1 ex1"
+    "ex2 ex2 ex2 ex2 ex2 ex2";
+}
+
+.content-development-example-1 {
+  grid-area: ex1;
+}
+
+.content-development-example-2 {
+  grid-area: ex2;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-development-example-2-image {
+  grid-area: image;
+  max-width: 450px;
+}
+
+.strategy-pages {
+  grid-template-areas:
+    "text text text text text text"
+    "image image image image image image"
+    "data data data data data data";
+}
+
+.content-development-text,
 .strategy-page-text {
   grid-area: text;
   max-width: 800px;
  }
 
+.content-development-example-1-image,
 .strategy-page-image {
   grid-area: image;
   max-width: 450px;
@@ -246,11 +276,16 @@ figcaption {
       "text text text text text text"
       "image image image data data data";
   }
+
+  .content-development {
+    grid-template-areas:
+      "text text text text text text"
+      "ex1 ex1 ex1 ex2 ex2 ex2";
+  }
 }
 
 @media screen and (min-width: 850px) {
   .engagement-list { justify-content: left; }
-
 }
 
 @media screen and (min-width: 900px) {
@@ -260,12 +295,10 @@ figcaption {
       "image image image data data data";
   }
 
-  // .overview {
-  //   grid-template-areas:
-  //     "text text role role"
-  //     "text text team team ";
-  // }
-
+  .content-development-example-1,
+  .content-development-example-2 {
+    max-width: 450px;
+  }
 }
 
 .user-research {

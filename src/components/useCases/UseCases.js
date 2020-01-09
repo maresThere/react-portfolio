@@ -3,6 +3,8 @@ import heroimageport from '../../images/heroimageport.jpg'
 import contentBox from '../../images/contentBox.jpg'
 import journeyMap from '../../images/journeyMap.png'
 import retiredMan from '../../images/retiredMan.png'
+import sectorIcons from '../../images/sectorIcons.jpg'
+import billionIcons from '../../images/billionIcons.jpg'
 
 import './UseCases.scss'
 
@@ -18,28 +20,28 @@ class UseCases extends Component {
             <p className="intro-question">How might we acquire long-term customers for our high priced investment software products?
             </p>
             <div className='overview'>
-            <div className='overview-text'>
-              <h4>Project Summary</h4>
-              <p>Owners wanted to acquire subscribers by offering a low priced subscription product. The product is to deliver a snap shot of what subscribers would have access to in a higher priced offering.</p>
-              <p>We pulled a feature from a product that gives stock ideas based on a multitude of filters.</p>
-            </div>
-            <div className='myrole'>
-              <h3>My Role</h3>
-              <ul>
-                <li>
-                Content creation
-                </li>
-                <li>
-                Template design and development
-                </li>
-                <li>
-                Coordinated scheduling
-                </li>
-                <li>
-                User Research
-                </li>
-              </ul>
-            </div>
+              <div className='overview-text'>
+                <h4>Project Summary</h4>
+                <p>Owners wanted to acquire subscribers by offering a low priced subscription product. The product is to deliver a snap shot of what subscribers would have access to in a higher priced offering.</p>
+                <p>We pulled a feature from a product that gives stock ideas based on a multitude of filters.</p>
+              </div>
+              <div className='myrole'>
+                <h3>My Role</h3>
+                <ul>
+                  <li>
+                  Content creation
+                  </li>
+                  <li>
+                  Template design and development
+                  </li>
+                  <li>
+                  Coordinated scheduling
+                  </li>
+                  <li>
+                  User Research
+                  </li>
+                </ul>
+              </div>
             <div className='team'>
               <h3>Team</h3>
               <ul>
@@ -114,13 +116,37 @@ class UseCases extends Component {
             <ul className='table-design-considerations'>
             <h6>Design Considerations</h6>
               <li>Strategy name at the top</li>
-              <li>Ticker symbol is the predominent data point</li>
+              <li>Ticker symbol is the predominant data point</li>
               <li>Some education about the strategy with a link to read more</li>
               <li>"Read more" takes the user to content discussing each strategy.</li>
             </ul>
-
           </div>
+          <div className="content-development">
+            <div className="content-development-text">
+              <h3 className='blue'>Information Design | Content Development</h3>
+              <h6>Opportunities to visualize copy</h6>
+              <p>The information provided is somewhat complicated and visual references will help keep the customer engaged with the page.
+              </p>
 
+              </div>
+
+                <div className='content-development-example-1'>
+                  <h6>Create Iconography to help users recognize common subject matter</h6>
+                  <p>Industry Sectors are often discussed in the investment world. Standard icons could be used across all channels.
+                  </p>
+                  <figure className="content-development-example-1-image">
+                    <img src={sectorIcons} className='placeholder' />
+                  </figure>
+                  </div>
+                  <div className='content-development-example-2'>
+                    <h6>Break up text with visual examples</h6>
+                    <p>Compelling information should be highlighted visually.
+                    </p>
+                    <figure className="content-development-example-2-image">
+                      <img src={billionIcons} className='placeholder' />
+                    </figure>
+                    </div>
+                </div>
           </section>
       </main>
     )
