@@ -84,6 +84,17 @@ class UseCases extends Component {
             <div className="strategy-pages">
               <div className="strategy-page-text">
                 <h3 className='blue'>Map Journey | Content Strategy</h3>
+                <div  className="task-flow">
+                  <div className="task-flow-box">
+                  <p>User opens email and views list of stocks</p>
+                  </div>
+                  <div className="task-flow-box">
+                  <p>User clicks on a "read more" link</p>
+                  </div>
+                  <div className="task-flow-box-end">
+                  <p>User reads information and returns to email</p>
+                  </div>
+                </div>
                 <h4 blue>Find opportunities to engage customers</h4>
                 <p>The weekly email contains links to a knowledge base to explain more about each filter. Users should click on these links at least once if they want to understand the research behind the filter.
                 </p>
